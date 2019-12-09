@@ -53,6 +53,20 @@ let scoresObj = {};
 let blObj = [];
 let languages = [];
 let variableMap = [];
+let protocolVariableMap = [];
+let protocolVisibilityObj = {};
+let protocolOrder = [];
+
+//harded coded protocol schema elements (change for each protocol)
+let activityDisplayName = {
+    "emotions": "Emotions",
+    "target_behaviors": "Target Behaviors",
+    "skills": "Skills",
+    "events": "Events"
+};
+let protocolDescription = "Pilot applet for DBT diary card"
+
+
 
 let options = {
     delimiter: ',',
@@ -80,7 +94,7 @@ csv
 
     .on('end', function () {
         //console.log(66, datas);
-        Object.keys(datas).forEach(form => {
+        Object.keys(datas).forEach( form => {
             let fieldList = datas[form]; // all items of an activity
             createFormContextSchema(form, fieldList); // create context for each activity
             let formContextUrl = `https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/activities/${form}/${form}_context`;
@@ -94,12 +108,19 @@ csv
                 processRow(form, field);
             });
             createFormSchema(form, formContextUrl);
-            
-            let activityList = Object.keys(datas);
-            createProtocolContext(activityList);
-
-
         });
+            //create protocol context
+            let activityList = Object.keys(datas);
+            let protocolContextUrl = `https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/protocols/${protocolName}/${protocolName}_context`
+            createProtocolContext(activityList);
+            
+            //create protocol schema
+            activityList.forEach( activityName => {
+            processActivities(activityName);
+            })
+
+            createProtocolSchema(protocolName, protocolContextUrl);
+        
     });
 
 function createFormContextSchema(form, fieldList) {
@@ -127,7 +148,7 @@ function createProtocolContext(activityList) {
                     "activity_path": `https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/activities/`           
     };
     let protocolContext = {};
-    activityList.forEach( activity => {
+    activityList.forEach(activity => {
         //let activityName = activity['Form Name'];
         // define item_x urls to be inserted in context for the corresponding form
         activityOBj[activity] = { "@id": `activity_path:${activity}/${activity}_schema` , "@type": "@id" };
@@ -362,6 +383,7 @@ function processRow(form, data){
     });
 }
 
+
 function createFormSchema(form, formContextUrl) {
     // console.log(27, form, visibilityObj);
     let jsonLD = {
@@ -392,9 +414,46 @@ function createFormSchema(form, formContextUrl) {
     });
 }
 
-//function createProtocolSchema(form, formContextUrl) {
+function processActivities (activityName) {
 
-//}
+    let condition = true; // for items visible by default
+    protocolVisibilityObj[activityName] = condition;
+    
+    // add activity to variableMap and Order
+    protocolVariableMap.push({"variableName": activityName, "isAbout": activityName});
+    protocolOrder.push(activityName);
+
+}
+
+function createProtocolSchema(protocolName, protocolContextUrl) {
+    let protocolSchema = {
+        "@context": [schemaContextUrl, protocolContextUrl],
+        "@type": "reproschema:ActivitySet",
+        "@id": `${protocolName}_schema`,
+        "skos:prefLabel": `${protocolName}`,
+        "skos:altLabel": `${protocolName}_schema`,
+        "schema:description": protocolDescription,
+        "schema:schemaVersion": "0.0.1",
+        "schema:version": "0.0.1",
+        // todo: preamble: Field Type = descriptive represents preamble in the CSV file., it also has branching logic. so should preamble be an item in our schema?
+        "variableMap": protocolVariableMap,
+        "ui": {
+            "order": protocolOrder,
+            "shuffle": false,
+            "activity_display_name": activityDisplayName,
+            "visibility": protocolVisibilityObj
+        }
+    };
+    const op = JSON.stringify(protocolSchema, null, 4);
+    // console.log(269, jsonLD);
+    fs.writeFile(`protocols/${protocolName}/${protocolName}_schema`, op, function (err) {
+        if (err) {
+            console.log("error in writing protocol schema")
+        }
+        else console.log("Protocol schema created");
+    });
+
+}
 
 function parseLanguageIsoCodes(inputString){
     let languages = [];
