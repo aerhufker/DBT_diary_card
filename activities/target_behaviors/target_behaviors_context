@@ -1,0 +1,30 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "target_behaviors": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/activities/target_behaviors/items/",
+        "suicide": {
+            "@id": "target_behaviors:suicide",
+            "@type": "@id"
+        },
+        "self-harm": {
+            "@id": "target_behaviors:self-harm",
+            "@type": "@id"
+        },
+        "impulsive_urges": {
+            "@id": "target_behaviors:impulsive_urges",
+            "@type": "@id"
+        },
+        "picking_scratching": {
+            "@id": "target_behaviors:picking_scratching",
+            "@type": "@id"
+        },
+        "planning_suicide": {
+            "@id": "target_behaviors:planning_suicide",
+            "@type": "@id"
+        },
+        "purge": {
+            "@id": "target_behaviors:purge",
+            "@type": "@id"
+        }
+    }
+}

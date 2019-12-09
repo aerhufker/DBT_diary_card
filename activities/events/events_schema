@@ -1,0 +1,47 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/activities/events/events_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "events_schema",
+    "skos:prefLabel": "events",
+    "skos:altLabel": "events_schema",
+    "schema:description": "events",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "scoringLogic": {},
+    "variableMap": [
+        {
+            "variableName": "important_events",
+            "isAbout": "important_events"
+        },
+        {
+            "variableName": "daily_goal",
+            "isAbout": "daily_goal"
+        },
+        {
+            "variableName": "goal_achieve",
+            "isAbout": "goal_achieve"
+        },
+        {
+            "variableName": "goal_obstacles",
+            "isAbout": "goal_obstacles"
+        }
+    ],
+    "ui": {
+        "order": [
+            "important_events",
+            "daily_goal",
+            "goal_achieve",
+            "goal_obstacles"
+        ],
+        "shuffle": false,
+        "visibility": {
+            "important_events": true,
+            "daily_goal": true,
+            "goal_achieve": true,
+            "goal_obstacles": "goal_achieve == 0 "
+        }
+    }
+}

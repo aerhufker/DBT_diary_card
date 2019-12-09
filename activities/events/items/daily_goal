@@ -1,0 +1,13 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "daily_goal",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "What was your goal for today?"
+    }
+}

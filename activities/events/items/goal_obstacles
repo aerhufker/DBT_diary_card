@@ -1,0 +1,13 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "goal_obstacles",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "What got in the way?"
+    }
+}

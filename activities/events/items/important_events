@@ -1,0 +1,13 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "important_events",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "What important events happened today?"
+    }
+}

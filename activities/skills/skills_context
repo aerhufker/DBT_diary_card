@@ -1,0 +1,26 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "skills": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/activities/skills/items/",
+        "mindfulness_skills": {
+            "@id": "skills:mindfulness_skills",
+            "@type": "@id"
+        },
+        "interpersonal_skills": {
+            "@id": "skills:interpersonal_skills",
+            "@type": "@id"
+        },
+        "emotion_regulation": {
+            "@id": "skills:emotion_regulation",
+            "@type": "@id"
+        },
+        "distress_tolerance": {
+            "@id": "skills:distress_tolerance",
+            "@type": "@id"
+        },
+        "module_of_the_week": {
+            "@id": "skills:module_of_the_week",
+            "@type": "@id"
+        }
+    }
+}

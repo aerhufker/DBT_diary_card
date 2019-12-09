@@ -1,0 +1,39 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/protocols/DBT_diary_card/DBT_diary_card_context"
+    ],
+    "@type": "reproschema:ActivitySet",
+    "@id": "DBT_diary_card_schema",
+    "skos:prefLabel": "DBT Diary Card",
+    "skos:altLabel": "DBT_diary_card",
+    "schema:description": "DBT diary card pilot",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "variableMap": [
+        {"variableName": "emotions", "isAbout": "emotions"},
+        {"variableName": "events", "isAbout": "events"},
+        {"variableName": "skills", "isAbout": "skills"},
+        {"variableName": "target_behaviors", "isAbout": "target_behaviors"}
+    ],
+    "ui": {
+        "order": [
+            "emotions",
+            "target_behaviors",
+            "skills",
+            "events"
+        ],
+        "shuffle": false,
+        "activity_display_name": {
+            "emotions": "Emotions",
+            "target_behaviors": "Target Behaviors",
+            "skills": "Skills",
+            "events": "Events"
+        },
+        "visibility": {
+            "emotions": true,
+            "target_behaviors": true,
+            "skills": true,
+            "events": true
+        }
+    }
+}
