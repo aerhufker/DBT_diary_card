@@ -18,4 +18,4 @@ module_of_the_week,skills,radio,,Module of the Week,"1, Mindfulness | 2, Interpe
 important_events,events,text,,What important events happened today?,,,,
 daily_goal,events,text,,What was your goal for today?,,,,
 goal_achieve,events,radio,,Did you achieve this goal?,"0, Yes | 1, No",,,
-goal_obstacles,events,text,,What got in the way?,,,,[goal_achieve] = 0 
+goal_obstacles,events,text,,What got in the way?,,,,[goal_achieve] = 1 
