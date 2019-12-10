@@ -6,7 +6,7 @@ const protocolName = "DBT_diary_card"
 //2. create your raw github repo URL
 const userName = 'hotavocado'
 const repoName = 'DBT_diary_card'
-const branchName = 'test_preamble'
+const branchName = 'clone1'
 
 let yourRepoURL = `https://raw.githubusercontent.com/${userName}/${repoName}/${branchName}`
 
