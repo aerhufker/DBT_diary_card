@@ -1,0 +1,86 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "dbt_daily": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/activities/dbt_daily/items/",
+        "happiness": {
+            "@id": "dbt_daily:happiness",
+            "@type": "@id"
+        },
+        "sadness": {
+            "@id": "dbt_daily:sadness",
+            "@type": "@id"
+        },
+        "anxiety_fear": {
+            "@id": "dbt_daily:anxiety_fear",
+            "@type": "@id"
+        },
+        "anger": {
+            "@id": "dbt_daily:anger",
+            "@type": "@id"
+        },
+        "shame_guilt": {
+            "@id": "dbt_daily:shame_guilt",
+            "@type": "@id"
+        },
+        "suicide": {
+            "@id": "dbt_daily:suicide",
+            "@type": "@id"
+        },
+        "self-harm": {
+            "@id": "dbt_daily:self-harm",
+            "@type": "@id"
+        },
+        "impulsive_urges": {
+            "@id": "dbt_daily:impulsive_urges",
+            "@type": "@id"
+        },
+        "picking_scratching": {
+            "@id": "dbt_daily:picking_scratching",
+            "@type": "@id"
+        },
+        "planning_suicide": {
+            "@id": "dbt_daily:planning_suicide",
+            "@type": "@id"
+        },
+        "purge": {
+            "@id": "dbt_daily:purge",
+            "@type": "@id"
+        },
+        "mindfulness_skills": {
+            "@id": "dbt_daily:mindfulness_skills",
+            "@type": "@id"
+        },
+        "interpersonal_skills": {
+            "@id": "dbt_daily:interpersonal_skills",
+            "@type": "@id"
+        },
+        "emotion_regulation": {
+            "@id": "dbt_daily:emotion_regulation",
+            "@type": "@id"
+        },
+        "distress_tolerance": {
+            "@id": "dbt_daily:distress_tolerance",
+            "@type": "@id"
+        },
+        "module_of_the_week": {
+            "@id": "dbt_daily:module_of_the_week",
+            "@type": "@id"
+        },
+        "important_events": {
+            "@id": "dbt_daily:important_events",
+            "@type": "@id"
+        },
+        "daily_goal": {
+            "@id": "dbt_daily:daily_goal",
+            "@type": "@id"
+        },
+        "goal_achieve": {
+            "@id": "dbt_daily:goal_achieve",
+            "@type": "@id"
+        },
+        "goal_obstacles": {
+            "@id": "dbt_daily:goal_obstacles",
+            "@type": "@id"
+        }
+    }
+}

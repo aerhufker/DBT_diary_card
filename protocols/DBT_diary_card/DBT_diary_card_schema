@@ -7,46 +7,25 @@
     "@id": "DBT_diary_card_schema",
     "skos:prefLabel": "DBT_diary_card",
     "skos:altLabel": "DBT_diary_card_schema",
-    "schema:description": "Pilot applet for DBT diary card",
+    "schema:description": "Pilot applet for DBT daily diary card",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "variableMap": [
         {
-            "variableName": "emotions",
-            "isAbout": "emotions"
-        },
-        {
-            "variableName": "target_behaviors",
-            "isAbout": "target_behaviors"
-        },
-        {
-            "variableName": "skills",
-            "isAbout": "skills"
-        },
-        {
-            "variableName": "events",
-            "isAbout": "events"
+            "variableName": "dbt_daily",
+            "isAbout": "dbt_daily"
         }
     ],
     "ui": {
         "order": [
-            "emotions",
-            "target_behaviors",
-            "skills",
-            "events"
+            "dbt_daily"
         ],
         "shuffle": false,
         "activity_display_name": {
-            "emotions": "Emotions",
-            "target_behaviors": "Target Behaviors",
-            "skills": "Skills",
-            "events": "Events"
+            "dbt_daily": "Daily Diary Card"
         },
         "visibility": {
-            "emotions": true,
-            "target_behaviors": true,
-            "skills": true,
-            "events": true
+            "dbt_daily": true
         }
     }
 }

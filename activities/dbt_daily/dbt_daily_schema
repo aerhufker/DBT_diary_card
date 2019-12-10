@@ -1,0 +1,143 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/activities/dbt_daily/dbt_daily_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "dbt_daily_schema",
+    "skos:prefLabel": "dbt_daily",
+    "skos:altLabel": "dbt_daily_schema",
+    "schema:description": "dbt_daily",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "scoringLogic": {},
+    "variableMap": [
+        {
+            "variableName": "happiness",
+            "isAbout": "happiness"
+        },
+        {
+            "variableName": "sadness",
+            "isAbout": "sadness"
+        },
+        {
+            "variableName": "anxiety_fear",
+            "isAbout": "anxiety_fear"
+        },
+        {
+            "variableName": "anger",
+            "isAbout": "anger"
+        },
+        {
+            "variableName": "shame_guilt",
+            "isAbout": "shame_guilt"
+        },
+        {
+            "variableName": "suicide",
+            "isAbout": "suicide"
+        },
+        {
+            "variableName": "self-harm",
+            "isAbout": "self-harm"
+        },
+        {
+            "variableName": "impulsive_urges",
+            "isAbout": "impulsive_urges"
+        },
+        {
+            "variableName": "picking_scratching",
+            "isAbout": "picking_scratching"
+        },
+        {
+            "variableName": "planning_suicide",
+            "isAbout": "planning_suicide"
+        },
+        {
+            "variableName": "purge",
+            "isAbout": "purge"
+        },
+        {
+            "variableName": "mindfulness_skills",
+            "isAbout": "mindfulness_skills"
+        },
+        {
+            "variableName": "interpersonal_skills",
+            "isAbout": "interpersonal_skills"
+        },
+        {
+            "variableName": "emotion_regulation",
+            "isAbout": "emotion_regulation"
+        },
+        {
+            "variableName": "distress_tolerance",
+            "isAbout": "distress_tolerance"
+        },
+        {
+            "variableName": "module_of_the_week",
+            "isAbout": "module_of_the_week"
+        },
+        {
+            "variableName": "important_events",
+            "isAbout": "important_events"
+        },
+        {
+            "variableName": "daily_goal",
+            "isAbout": "daily_goal"
+        },
+        {
+            "variableName": "goal_achieve",
+            "isAbout": "goal_achieve"
+        },
+        {
+            "variableName": "goal_obstacles",
+            "isAbout": "goal_obstacles"
+        }
+    ],
+    "ui": {
+        "order": [
+            "happiness",
+            "sadness",
+            "anxiety_fear",
+            "anger",
+            "shame_guilt",
+            "suicide",
+            "self-harm",
+            "impulsive_urges",
+            "picking_scratching",
+            "planning_suicide",
+            "purge",
+            "mindfulness_skills",
+            "interpersonal_skills",
+            "emotion_regulation",
+            "distress_tolerance",
+            "module_of_the_week",
+            "important_events",
+            "daily_goal",
+            "goal_achieve",
+            "goal_obstacles"
+        ],
+        "shuffle": false,
+        "visibility": {
+            "happiness": true,
+            "sadness": true,
+            "anxiety_fear": true,
+            "anger": true,
+            "shame_guilt": true,
+            "suicide": true,
+            "self-harm": true,
+            "impulsive_urges": true,
+            "picking_scratching": true,
+            "planning_suicide": true,
+            "purge": true,
+            "mindfulness_skills": true,
+            "interpersonal_skills": true,
+            "emotion_regulation": true,
+            "distress_tolerance": true,
+            "module_of_the_week": true,
+            "important_events": true,
+            "daily_goal": true,
+            "goal_achieve": true,
+            "goal_obstacles": "goal_achieve == 1 "
+        }
+    }
+}

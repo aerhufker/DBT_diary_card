@@ -2,20 +2,8 @@
     "@context": {
         "@version": 1.1,
         "activity_path": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/activities/",
-        "emotions": {
-            "@id": "activity_path:emotions/emotions_schema",
-            "@type": "@id"
-        },
-        "target_behaviors": {
-            "@id": "activity_path:target_behaviors/target_behaviors_schema",
-            "@type": "@id"
-        },
-        "skills": {
-            "@id": "activity_path:skills/skills_schema",
-            "@type": "@id"
-        },
-        "events": {
-            "@id": "activity_path:events/events_schema",
+        "dbt_daily": {
+            "@id": "activity_path:dbt_daily/dbt_daily_schema",
             "@type": "@id"
         }
     }

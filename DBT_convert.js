@@ -59,12 +59,9 @@ let protocolOrder = [];
 
 //harded coded protocol schema elements (change for each protocol)
 let activityDisplayName = {
-    "emotions": "Emotions",
-    "target_behaviors": "Target Behaviors",
-    "skills": "Skills",
-    "events": "Events"
+    "dbt_daily": "Daily Diary Card",
 };
-let protocolDescription = "Pilot applet for DBT diary card"
+let protocolDescription = "Pilot applet for DBT daily diary card"
 
 
 
