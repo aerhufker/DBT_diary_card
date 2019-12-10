@@ -42,7 +42,12 @@
             },
             {
                 "schema:value": 7,
-                "schema:name": "Radical Acceptance",
+                "schema:name": "Radical Acceptance ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 8,
+                "schema:name": "I did not use any skills",
                 "@type": "schema:option"
             }
         ]

@@ -16,6 +16,11 @@
     "responseOptions": {
         "choices": [
             {
+                "schema:value": 0,
+                "schema:name": "0 ",
+                "@type": "schema:option"
+            },
+            {
                 "schema:value": 1,
                 "schema:name": "1 ",
                 "@type": "schema:option"
