@@ -4,6 +4,9 @@
     ],
     "@type": "reproschema:Field",
     "skos:altLabel": "suicide",
+    "preamble": {
+        "en": "Target Behaviors (* if acted on it):"
+    },
     "ui": {
         "inputType": "slider"
     },

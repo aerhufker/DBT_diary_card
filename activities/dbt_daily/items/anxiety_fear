@@ -4,6 +4,9 @@
     ],
     "@type": "reproschema:Field",
     "skos:altLabel": "anxiety_fear",
+    "preamble": {
+        "en": "Emotions:"
+    },
     "ui": {
         "inputType": "slider"
     },
