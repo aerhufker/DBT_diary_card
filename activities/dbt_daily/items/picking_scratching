@@ -46,7 +46,7 @@
                 "@type": "schema:option"
             }
         ],
-        "schema:minValue": "1",
+        "schema:minValue": "0",
         "schema:maxValue": "5"
     }
 }
