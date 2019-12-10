@@ -1,7 +1,7 @@
 {
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/test_preamble/activities/dbt_daily/dbt_daily_context"
+        "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/clone1/activities/dbt_daily/dbt_daily_context"
     ],
     "@type": "reproschema:Activity",
     "@id": "dbt_daily_schema",
