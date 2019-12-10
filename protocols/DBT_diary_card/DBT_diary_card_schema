@@ -1,7 +1,7 @@
 {
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/clone1/protocols/DBT_diary_card/DBT_diary_card_context"
+        "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/protocols/DBT_diary_card/DBT_diary_card_context"
     ],
     "@type": "reproschema:ActivitySet",
     "@id": "DBT_diary_card_schema",
