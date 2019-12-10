@@ -1,7 +1,7 @@
 {
     "@context": {
         "@version": 1.1,
-        "activity_path": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/activities/",
+        "activity_path": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/test_preamble/activities/",
         "dbt_daily": {
             "@id": "activity_path:dbt_daily/dbt_daily_schema",
             "@type": "@id"
