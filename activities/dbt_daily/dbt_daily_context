@@ -1,7 +1,7 @@
 {
     "@context": {
         "@version": 1.1,
-        "dbt_daily": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/test_preamble/activities/dbt_daily/items/",
+        "dbt_daily": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/clone1/activities/dbt_daily/items/",
         "happiness": {
             "@id": "dbt_daily:happiness",
             "@type": "@id"
