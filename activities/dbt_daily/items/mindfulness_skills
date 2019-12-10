@@ -42,7 +42,12 @@
             },
             {
                 "schema:value": 7,
-                "schema:name": "Effectiveness: Focus on what works",
+                "schema:name": "Effectiveness: Focus on what works ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 8,
+                "schema:name": "I did not use any skills",
                 "@type": "schema:option"
             }
         ]

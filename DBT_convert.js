@@ -1,3 +1,26 @@
+//User inputs: these are specific to your protocol, fill out before using the script
+
+//1. your protocol name, use underscore for spaces, avoid special characters
+const protocolName = "DBT_diary_card"
+
+//2. create your raw github repo URL
+const userName = 'hotavocado'
+const repoName = 'DBT_diary_card'
+const branchName = 'test_preamble'
+
+let yourRepoURL = `https://raw.githubusercontent.com/${userName}/${repoName}/${branchName}`
+
+//3. add a description to your protocol
+let protocolDescription = "Pilot applet for DBT daily diary card"
+
+//4. give display names to your activities ()
+let activityDisplayName = {
+    "dbt_daily": "Daily Diary Card",
+};
+
+
+
+
 /* ************ Constants **************************************************** */
 const csv = require('fast-csv');
 const fs = require('fs');
@@ -34,7 +57,7 @@ const uiList = ['inputType', 'shuffle'];
 const responseList = ['type', 'requiredValue'];
 const defaultLanguage = 'en';
 const datas = {};
-const protocolName = process.argv[3]
+
 /* **************************************************************************************** */
 
 // Make sure we got a filename on the command line.
@@ -57,13 +80,6 @@ let protocolVariableMap = [];
 let protocolVisibilityObj = {};
 let protocolOrder = [];
 
-//harded coded protocol schema elements (change for each protocol)
-let activityDisplayName = {
-    "dbt_daily": "Daily Diary Card",
-};
-let protocolDescription = "Pilot applet for DBT daily diary card"
-
-
 
 let options = {
     delimiter: ',',
@@ -84,7 +100,7 @@ csv
             shell.mkdir('-p', 'activities/' + data['Form Name'] + '/items');          
         }
         //create directory for protocol
-        shell.mkdir('-p', 'protocols/' + process.argv[3]);
+        shell.mkdir('-p', 'protocols/' + protocolName);
         // console.log(62, data);
         datas[data['Form Name']].push(data);
     })
@@ -94,7 +110,7 @@ csv
         Object.keys(datas).forEach( form => {
             let fieldList = datas[form]; // all items of an activity
             createFormContextSchema(form, fieldList); // create context for each activity
-            let formContextUrl = `https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/activities/${form}/${form}_context`;
+            let formContextUrl = `${yourRepoURL}/activities/${form}/${form}_context`;
             scoresObj = {};
             visibilityObj = {};
             variableMap = [];
@@ -108,7 +124,7 @@ csv
         });
             //create protocol context
             let activityList = Object.keys(datas);
-            let protocolContextUrl = `https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/protocols/${protocolName}/${protocolName}_context`
+            let protocolContextUrl = `${yourRepoURL}/protocols/${protocolName}/${protocolName}_context`
             createProtocolContext(activityList);
             
             //create protocol schema
@@ -124,7 +140,7 @@ function createFormContextSchema(form, fieldList) {
     // define context file for each form
     let itemOBj = { "@version": 1.1 };
     let formContext = {};
-    itemOBj[form] = `https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/activities/${form}/items/`;
+    itemOBj[form] = `${yourRepoURL}/activities/${form}/items/`;
     fieldList.forEach( field => {
         let field_name = field['Variable / Field Name'];
         // define item_x urls to be inserted in context for the corresponding form
@@ -142,7 +158,7 @@ function createFormContextSchema(form, fieldList) {
 function createProtocolContext(activityList) {
     //create protocol context file
     let activityOBj = { "@version": 1.1,
-                    "activity_path": `https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/activities/`           
+                    "activity_path": `${yourRepoURL}/activities/`           
     };
     let protocolContext = {};
     activityList.forEach(activity => {
@@ -152,7 +168,7 @@ function createProtocolContext(activityList) {
     });
     protocolContext['@context'] = activityOBj
     const pc = JSON.stringify(protocolContext, null, 4);
-    fs.writeFile(`protocols/${process.argv[3]}/${protocolName}_context`, pc, function(err) {
+    fs.writeFile(`protocols/${protocolName}/${protocolName}_context`, pc, function(err) {
         if (err)
             console.log(err);
         else console.log(`Protocol context created for ${protocolName}`);
@@ -427,7 +443,7 @@ function createProtocolSchema(protocolName, protocolContextUrl) {
         "@context": [schemaContextUrl, protocolContextUrl],
         "@type": "reproschema:ActivitySet",
         "@id": `${protocolName}_schema`,
-        "skos:prefLabel": `${protocolName}`,
+        "skos:prefLabel": 'Daily Diary Card',
         "skos:altLabel": `${protocolName}_schema`,
         "schema:description": protocolDescription,
         "schema:schemaVersion": "0.0.1",

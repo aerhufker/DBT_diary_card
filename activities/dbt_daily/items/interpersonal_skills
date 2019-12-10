@@ -27,7 +27,12 @@
             },
             {
                 "schema:value": 4,
-                "schema:name": "Dialectics",
+                "schema:name": "Dialectics ",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 5,
+                "schema:name": "I did not use any skills",
                 "@type": "schema:option"
             }
         ]
