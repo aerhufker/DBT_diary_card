@@ -427,7 +427,7 @@ function createProtocolSchema(protocolName, protocolContextUrl) {
         "@context": [schemaContextUrl, protocolContextUrl],
         "@type": "reproschema:ActivitySet",
         "@id": `${protocolName}_schema`,
-        "skos:prefLabel": `${protocolName}`,
+        "skos:prefLabel": 'Daily Diary Card',
         "skos:altLabel": `${protocolName}_schema`,
         "schema:description": protocolDescription,
         "schema:schemaVersion": "0.0.1",
