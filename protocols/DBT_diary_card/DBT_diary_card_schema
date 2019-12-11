@@ -21,9 +21,6 @@
             "dbt_daily"
         ],
         "shuffle": false,
-        "activity_display_name": {
-            "dbt_daily": "Daily Diary Card"
-        },
         "visibility": {
             "dbt_daily": true
         }
