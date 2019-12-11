@@ -13,12 +13,6 @@ let yourRepoURL = `https://raw.githubusercontent.com/${userName}/${repoName}/${b
 //3. add a description to your protocol
 let protocolDescription = "Pilot applet for DBT daily diary card"
 
-//4. give display names to your activities ()
-let activityDisplayName = {
-    "dbt_daily": "Daily Diary Card",
-};
-
-
 
 
 /* ************ Constants **************************************************** */
@@ -32,6 +26,7 @@ const HTMLParser =  require ('node-html-parser');
 const schemaMap = {
     "Identifier?": "@id",
     "Variable / Field Name": "skos:altLabel",
+    "Item Display Name": "skos:prefLabel",
     "Field Note": "schema:description",
     "Section Header": "preamble", // todo: check this
     "Field Label": "question",
@@ -43,7 +38,9 @@ const schemaMap = {
     "Branching Logic (Show field only if...)": "visibility",
     "multipleChoice": "multipleChoice",
     "responseType": "@type"
+
 };
+
 
 const inputTypeMap = {
     "calc": "number",
@@ -62,7 +59,7 @@ const datas = {};
 
 // Make sure we got a filename on the command line.
 if (process.argv.length < 3) {
-    console.log('Usage: node ' + process.argv[1] + 'data_dic_testver.csv');
+    console.log('Usage: node ' + process.argv[1] + 'your_data_dic.csv');
     process.exit(1);
 }
 // Read the file.
@@ -114,6 +111,9 @@ csv
             scoresObj = {};
             visibilityObj = {};
             variableMap = [];
+            //console.log(fieldList[0]['Form Display Name']);
+            activityDisplayName = fieldList[0]['Form Display Name'];
+            activityDescription = fieldList[0]['Form Note'];
             fieldList.forEach( field => {
                 if(languages.length === 0){
                     languages = parseLanguageIsoCodes(field['Field Label']);
@@ -181,6 +181,8 @@ function processRow(form, data){
     let ui = {};
     let rspObj = {};
     let choiceList = [];
+   
+
     rowData['@context'] = [schemaContextUrl];
     rowData['@type'] = 'reproschema:Field';
 
@@ -403,9 +405,9 @@ function createFormSchema(form, formContextUrl) {
         "@context": [schemaContextUrl, formContextUrl],
         "@type": "reproschema:Activity",
         "@id": `${form}_schema`,
-        "skos:prefLabel": `${form }`,
+        "skos:prefLabel": activityDisplayName,
         "skos:altLabel": `${form}_schema`,
-        "schema:description": `${form}`,
+        "schema:description": activityDescription,
         "schema:schemaVersion": "0.0.1",
         "schema:version": "0.0.1",
         // todo: preamble: Field Type = descriptive represents preamble in the CSV file., it also has branching logic. so should preamble be an item in our schema?
@@ -453,7 +455,6 @@ function createProtocolSchema(protocolName, protocolContextUrl) {
         "ui": {
             "order": protocolOrder,
             "shuffle": false,
-            "activity_display_name": activityDisplayName,
             "visibility": protocolVisibilityObj
         }
     };
@@ -504,4 +505,3 @@ function parseHtml(inputString) {
     }
     return result;
 }
-
