@@ -37,24 +37,48 @@
             "isAbout": "suicide"
         },
         {
+            "variableName": "suicide_act",
+            "isAbout": "suicide_act"
+        },
+        {
             "variableName": "self-harm",
             "isAbout": "self-harm"
+        },
+        {
+            "variableName": "self-harm_act",
+            "isAbout": "self-harm_act"
         },
         {
             "variableName": "impulsive_urges",
             "isAbout": "impulsive_urges"
         },
         {
+            "variableName": "impulsive_urges_act",
+            "isAbout": "impulsive_urges_act"
+        },
+        {
             "variableName": "picking_scratching",
             "isAbout": "picking_scratching"
+        },
+        {
+            "variableName": "picking_scratching_act",
+            "isAbout": "picking_scratching_act"
         },
         {
             "variableName": "planning_suicide",
             "isAbout": "planning_suicide"
         },
         {
+            "variableName": "planning_suicide_act",
+            "isAbout": "planning_suicide_act"
+        },
+        {
             "variableName": "purge",
             "isAbout": "purge"
+        },
+        {
+            "variableName": "purge_act",
+            "isAbout": "purge_act"
         },
         {
             "variableName": "mindfulness_skills",
@@ -81,11 +105,17 @@
             "anger",
             "shame_guilt",
             "suicide",
+            "suicide_act",
             "self-harm",
+            "self-harm_act",
             "impulsive_urges",
+            "impulsive_urges_act",
             "picking_scratching",
+            "picking_scratching_act",
             "planning_suicide",
+            "planning_suicide_act",
             "purge",
+            "purge_act",
             "mindfulness_skills",
             "interpersonal_skills",
             "emotion_regulation",
@@ -99,11 +129,17 @@
             "anger": true,
             "shame_guilt": true,
             "suicide": true,
+            "suicide_act": "suicide > 1",
             "self-harm": true,
+            "self-harm_act": "self-harm > 1",
             "impulsive_urges": true,
+            "impulsive_urges_act": "impulsive_urges > 1",
             "picking_scratching": true,
+            "picking_scratching_act": "picking_scratching > 1",
             "planning_suicide": true,
+            "planning_suicide_act": "planning_suicide > 1",
             "purge": true,
+            "purge_act": "purge > 1",
             "mindfulness_skills": true,
             "interpersonal_skills": true,
             "emotion_regulation": true,

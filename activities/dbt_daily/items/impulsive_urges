@@ -5,12 +5,12 @@
     "@type": "reproschema:Field",
     "skos:altLabel": "impulsive_urges",
     "preamble": {
-        "en": "Target Behaviors (* if acted on it):"
+        "en": "Target Behaviors:"
     },
     "ui": {
         "inputType": "slider"
     },
-    "question": "Impulsive urges",
+    "question": "How intense were your **impulsive urges** today?",
     "responseOptions": {
         "choices": [
             {

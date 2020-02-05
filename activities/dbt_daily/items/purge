@@ -5,12 +5,12 @@
     "@type": "reproschema:Field",
     "skos:altLabel": "purge",
     "preamble": {
-        "en": "Target Behaviors (* if acted on it):"
+        "en": "Target Behaviors:"
     },
     "ui": {
         "inputType": "slider"
     },
-    "question": "Purging",
+    "question": "How intense were your urges for **purging** today?",
     "responseOptions": {
         "choices": [
             {

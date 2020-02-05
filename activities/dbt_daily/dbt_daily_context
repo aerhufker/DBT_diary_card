@@ -26,24 +26,48 @@
             "@id": "dbt_daily:suicide",
             "@type": "@id"
         },
+        "suicide_act": {
+            "@id": "dbt_daily:suicide_act",
+            "@type": "@id"
+        },
         "self-harm": {
             "@id": "dbt_daily:self-harm",
+            "@type": "@id"
+        },
+        "self-harm_act": {
+            "@id": "dbt_daily:self-harm_act",
             "@type": "@id"
         },
         "impulsive_urges": {
             "@id": "dbt_daily:impulsive_urges",
             "@type": "@id"
         },
+        "impulsive_urges_act": {
+            "@id": "dbt_daily:impulsive_urges_act",
+            "@type": "@id"
+        },
         "picking_scratching": {
             "@id": "dbt_daily:picking_scratching",
+            "@type": "@id"
+        },
+        "picking_scratching_act": {
+            "@id": "dbt_daily:picking_scratching_act",
             "@type": "@id"
         },
         "planning_suicide": {
             "@id": "dbt_daily:planning_suicide",
             "@type": "@id"
         },
+        "planning_suicide_act": {
+            "@id": "dbt_daily:planning_suicide_act",
+            "@type": "@id"
+        },
         "purge": {
             "@id": "dbt_daily:purge",
+            "@type": "@id"
+        },
+        "purge_act": {
+            "@id": "dbt_daily:purge_act",
             "@type": "@id"
         },
         "mindfulness_skills": {

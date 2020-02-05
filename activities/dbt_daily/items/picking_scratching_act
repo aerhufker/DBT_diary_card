@@ -3,25 +3,23 @@
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
     ],
     "@type": "reproschema:Field",
-    "skos:altLabel": "goal_achieve",
+    "skos:altLabel": "picking_scratching_act",
+    "preamble": {
+        "en": "Target Behaviors:"
+    },
     "ui": {
         "inputType": "radio"
     },
-    "question": "Did you achieve this goal?",
+    "question": "Did you act on the urge?",
     "responseOptions": {
         "choices": [
             {
-                "schema:value": 0,
+                "schema:value": 1,
                 "schema:name": "Yes",
                 "@type": "schema:option"
             },
             {
                 "schema:value": 1,
-                "schema:name": "Partially",
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 2,
                 "schema:name": "No",
                 "@type": "schema:option"
             }

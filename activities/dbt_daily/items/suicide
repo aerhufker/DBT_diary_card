@@ -5,12 +5,12 @@
     "@type": "reproschema:Field",
     "skos:altLabel": "suicide",
     "preamble": {
-        "en": "Target Behaviors (* if acted on it):"
+        "en": "Target Behaviors:"
     },
     "ui": {
         "inputType": "slider"
     },
-    "question": "Suicide",
+    "question": "How intense were your urges for **suicide** today?",
     "responseOptions": {
         "choices": [
             {
