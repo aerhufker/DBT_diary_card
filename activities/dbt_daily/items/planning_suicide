@@ -10,34 +10,32 @@
     "ui": {
         "inputType": "slider"
     },
-    "question": {
-        "en": "Planning for suicide"
-    },
+    "question": "Planning for suicide",
     "responseOptions": {
         "choices": [
             {
                 "schema:value": 0,
-                "schema:name": "0 ",
+                "schema:name": "0",
                 "@type": "schema:option"
             },
             {
                 "schema:value": 1,
-                "schema:name": "1 ",
+                "schema:name": "1",
                 "@type": "schema:option"
             },
             {
                 "schema:value": 2,
-                "schema:name": "2 ",
+                "schema:name": "2",
                 "@type": "schema:option"
             },
             {
                 "schema:value": 3,
-                "schema:name": "3 ",
+                "schema:name": "3",
                 "@type": "schema:option"
             },
             {
                 "schema:value": 4,
-                "schema:name": "4 ",
+                "schema:name": "4",
                 "@type": "schema:option"
             },
             {

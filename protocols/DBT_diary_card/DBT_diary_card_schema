@@ -5,24 +5,31 @@
     ],
     "@type": "reproschema:ActivitySet",
     "@id": "DBT_diary_card_schema",
-    "skos:prefLabel": "Daily Diary Card",
+    "skos:prefLabel": "DBT Daily Diary Card v0.1",
     "skos:altLabel": "DBT_diary_card_schema",
     "schema:description": "Pilot applet for DBT daily diary card",
+    "schema:about": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/protocols/DBT_diary_card/README.md",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "variableMap": [
         {
             "variableName": "dbt_daily",
             "isAbout": "dbt_daily"
+        },
+        {
+            "variableName": "dbt_daily_goals",
+            "isAbout": "dbt_daily_goals"
         }
     ],
     "ui": {
         "order": [
-            "dbt_daily"
+            "dbt_daily",
+            "dbt_daily_goals"
         ],
         "shuffle": false,
         "visibility": {
-            "dbt_daily": true
+            "dbt_daily": true,
+            "dbt_daily_goals": true
         }
     }
 }

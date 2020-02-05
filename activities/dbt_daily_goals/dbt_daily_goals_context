@@ -1,0 +1,22 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "dbt_daily_goals": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/activities/dbt_daily_goals/items/",
+        "important_events": {
+            "@id": "dbt_daily_goals:important_events",
+            "@type": "@id"
+        },
+        "daily_goal": {
+            "@id": "dbt_daily_goals:daily_goal",
+            "@type": "@id"
+        },
+        "goal_achieve": {
+            "@id": "dbt_daily_goals:goal_achieve",
+            "@type": "@id"
+        },
+        "goal_obstacles": {
+            "@id": "dbt_daily_goals:goal_obstacles",
+            "@type": "@id"
+        }
+    }
+}

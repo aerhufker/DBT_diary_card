@@ -12,37 +12,37 @@
         "choices": [
             {
                 "schema:value": 1,
-                "schema:name": "STOP ",
+                "schema:name": "STOP",
                 "@type": "schema:option"
             },
             {
                 "schema:value": 2,
-                "schema:name": "Distract (Wise Mind ACCEPTS) ",
+                "schema:name": "Distract (Wise Mind ACCEPTS)",
                 "@type": "schema:option"
             },
             {
                 "schema:value": 3,
-                "schema:name": "Self-soothe ",
+                "schema:name": "Self-soothe",
                 "@type": "schema:option"
             },
             {
                 "schema:value": 4,
-                "schema:name": "TIPP ",
+                "schema:name": "TIPP",
                 "@type": "schema:option"
             },
             {
                 "schema:value": 5,
-                "schema:name": "IMPROVE the Moment ",
+                "schema:name": "IMPROVE the Moment",
                 "@type": "schema:option"
             },
             {
                 "schema:value": 6,
-                "schema:name": "Pros and Cons ",
+                "schema:name": "Pros and Cons",
                 "@type": "schema:option"
             },
             {
                 "schema:value": 7,
-                "schema:name": "Radical Acceptance ",
+                "schema:name": "Radical Acceptance",
                 "@type": "schema:option"
             },
             {
@@ -52,7 +52,5 @@
             }
         ]
     },
-    "question": {
-        "en": "Distress Tolerance (Check skills used)"
-    }
+    "question": "Distress Tolerance (Check skills used)"
 }

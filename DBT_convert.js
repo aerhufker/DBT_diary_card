@@ -1,7 +1,10 @@
 //User inputs: these are specific to your protocol, fill out before using the script
 
-//1. your protocol name, use underscore for spaces, avoid special characters
+//1. your protocol id: use underscore for spaces, avoid special characters. The display name is the one that will show up in the app, this will be parsed as string.
 const protocolName = "DBT_diary_card"
+
+//2. your protocol display name: this will show up in the app and be parsed as a string
+const protocolDisplayName = "DBT Daily Diary Card v0.1"
 
 //2. create your raw github repo URL
 const userName = 'hotavocado'
@@ -13,6 +16,19 @@ let yourRepoURL = `https://raw.githubusercontent.com/${userName}/${repoName}/${b
 //3. add a description to your protocol
 let protocolDescription = "Pilot applet for DBT daily diary card"
 
+//4. where are you hosting your images?
+let imagePath = 'https://raw.githubusercontent.com/hotavocado/openmoji/master/color/72x72/'
+
+/* hard coded activity display object
+let activityDisplayObj = {
+    "pre_questionnaire": 'Pre Questionnaire',
+    "morning_set": 'Morning Question Set',
+    "day_set": 'Mid-day Question Set',
+    "evening_set": 'Evening Question Set'
+};
+*/
+//5. Path to your README.md file, that will show up in the 'About' tab of the applet
+let protocolAboutPath = `${yourRepoURL}/protocols/${protocolName}/README.md`
 
 
 /* ************ Constants **************************************************** */
@@ -31,13 +47,15 @@ const schemaMap = {
     "Section Header": "preamble", // todo: check this
     "Field Label": "question",
     "Field Type": "inputType",
+    "Allow": "allow",
     "Required Field?": "requiredValue",
     "minVal": "schema:minValue",
     "maxVal": "schema:maxValue",
     "Choices, Calculations, OR Slider Labels": "choices",
     "Branching Logic (Show field only if...)": "visibility",
     "multipleChoice": "multipleChoice",
-    "responseType": "@type"
+    "responseType": "@type",
+    "headerImage": "headerImage"
 
 };
 
@@ -50,7 +68,7 @@ const inputTypeMap = {
     "notes": "text"
 };
 
-const uiList = ['inputType', 'shuffle'];
+const uiList = ['inputType', 'shuffle', 'allow'];
 const responseList = ['type', 'requiredValue'];
 const defaultLanguage = 'en';
 const datas = {};
@@ -181,8 +199,8 @@ function processRow(form, data){
     let ui = {};
     let rspObj = {};
     let choiceList = [];
+    
    
-
     rowData['@context'] = [schemaContextUrl];
     rowData['@type'] = 'reproschema:Field';
 
@@ -197,8 +215,25 @@ function processRow(form, data){
         // get schema key from mapping.json corresponding to current_key
         if (schemaMap.hasOwnProperty(current_key)) {
 
+            //Parse 'allow' array
+            if (schemaMap[current_key] === 'allow' && data[current_key] !== '') {
+                let uiKey = schemaMap[current_key];
+                let uiValue = data[current_key].split(', ');
+                //uiValue.forEach(val => {
+                //    allowList.push(val)
+                //})
+                // add object to ui element of the item
+                if (rowData.hasOwnProperty('ui')) {
+                    rowData.ui[uiKey] = uiValue; // append to existing ui object
+                }
+                else { // create new ui object
+                    ui[uiKey] = uiValue;
+                    rowData['ui'] = ui;
+                }
+            }
+
             // check all ui elements to be nested under 'ui' key of the item
-            if (uiList.indexOf(schemaMap[current_key]) > -1) {
+            else if (uiList.indexOf(schemaMap[current_key]) > -1 && data[current_key] !== '') {
                 let uiKey = schemaMap[current_key];
                 let uiValue = data[current_key];
                 if (inputTypeMap.hasOwnProperty(data[current_key])) { // map Field type to supported inputTypes
@@ -261,6 +296,22 @@ function processRow(form, data){
                     rowData['responseOptions'] = rspObj;
                 }
             }
+
+            //parse required
+            //else if (schemaMap[current_key] === 'requiredValue' && data[current_key] !== '') {
+
+                // split string wrt '|' to get each choice
+                //let requiredVal = (data[current_key]);
+              
+                // insert 'multiplechoices' key inside responseOptions of the item
+                //if (rowData.hasOwnProperty('responseOptions')) {
+                //    rowData.responseOptions[schemaMap[current_key]] = requiredVal;
+                //}
+                //else {
+                //    rspObj[schemaMap[current_key]] = requiredVal;
+                //   rowData['responseOptions'] = rspObj;
+                //}
+            //}
 /*
             //parse @type
             else if (schemaMap[current_key] === '@type') {
@@ -280,17 +331,27 @@ function processRow(form, data){
             else if (schemaMap[current_key] === 'choices' && data[current_key] !== '') {
 
                 // split string wrt '|' to get each choice
-                let c = data[current_key].split('|');
+                let c = data[current_key].split(' | ');
                 // split each choice wrt ',' to get schema:name and schema:value
                 c.forEach(ch => { // ch = { value, name}
                     let choiceObj = {};
                     let cs = ch.split(', ');
-                    // create name and value pair for each choice option
-                    choiceObj['schema:value'] = parseInt(cs[0]);
-                    let cnameList = cs[1];
-                    choiceObj['schema:name'] = cnameList;
-                    choiceObj['@type'] = "schema:option";
-                    choiceList.push(choiceObj);
+                    // create name and value pair + image link for each choice option
+                    if (cs.length === 3) {
+                        choiceObj['schema:value'] = parseInt(cs[0]);
+                        let cnameList = cs[1];
+                        choiceObj['schema:name'] = cnameList;
+                        choiceObj['@type'] = "schema:option";
+                        choiceObj['schema:image'] = imagePath + cs[2] + '.png';
+                        choiceList.push(choiceObj);
+                    } else {
+                    // for no image, create name and value pair for each choice option
+                        choiceObj['schema:value'] = parseInt(cs[0]);
+                        let cnameList = cs[1];
+                        choiceObj['schema:name'] = cnameList;
+                        choiceObj['@type'] = "schema:option";
+                        choiceList.push(choiceObj);
+                    }
 
                 });
                 // insert 'choices' key inside responseOptions of the item
@@ -345,7 +406,7 @@ function processRow(form, data){
                     let s = condition;
                     // normalize the condition field to resemble javascript
                     let re = RegExp(/\(([0-9]*)\)/g);
-                    condition = condition.replace(re, "___$1");
+                    //condition = condition.replace(re, "___$1");
                     condition = condition.replace(/([^>|<])=/g, "$1==");
                     condition = condition.replace(/\ and\ /g, " && ");
                     condition = condition.replace(/\ or\ /g, " || ");
@@ -356,12 +417,22 @@ function processRow(form, data){
             }
 
             // decode html fields
-            else if ((schemaMap[current_key] === 'question' || schemaMap[current_key] ==='schema:description'
+
+            //Parse headerImage
+            else if (schemaMap[current_key] === 'headerImage' && data[current_key] !== '') {
+                let questions = '\r\n\r\n![' + data[current_key] + '](' + imagePath + data[current_key] + '.png)\r\n\r\n';
+                //console.log(231, form, schemaMap[current_key], questions);
+                rowData[current_key] = questions;
+                }
+    
+            //Parse preamble and description
+            else if ((schemaMap[current_key] ==='schema:description'
                 || schemaMap[current_key] === 'preamble') && data[current_key] !== '') {
                 let questions = parseHtml(data[current_key]);
                 console.log(231, form, schemaMap[current_key], questions);
                 rowData[schemaMap[current_key]] = questions;
             }
+
             // non-nested schema elements
             else if (data[current_key] !== '')
                 rowData[schemaMap[current_key]] = data[current_key];
@@ -378,6 +449,15 @@ function processRow(form, data){
         // text with value in validation as ddate_mdy is of inputType - date
         // dropdown and autocomplete??
     });
+
+    //merge the header image and question text
+    if (rowData['headerImage'] !== undefined) {
+
+    rowData['question'] = rowData['headerImage'] + rowData['question']
+    delete rowData['headerImage']
+
+    };
+
     const field_name = data['Variable / Field Name'];
 
     // add field to variableMap
@@ -445,9 +525,10 @@ function createProtocolSchema(protocolName, protocolContextUrl) {
         "@context": [schemaContextUrl, protocolContextUrl],
         "@type": "reproschema:ActivitySet",
         "@id": `${protocolName}_schema`,
-        "skos:prefLabel": 'Daily Diary Card',
+        "skos:prefLabel": protocolDisplayName,
         "skos:altLabel": `${protocolName}_schema`,
         "schema:description": protocolDescription,
+        "schema:about": protocolAboutPath,
         "schema:schemaVersion": "0.0.1",
         "schema:version": "0.0.1",
         // todo: preamble: Field Type = descriptive represents preamble in the CSV file., it also has branching logic. so should preamble be an item in our schema?
@@ -455,6 +536,7 @@ function createProtocolSchema(protocolName, protocolContextUrl) {
         "ui": {
             "order": protocolOrder,
             "shuffle": false,
+            //"activity_display_name": activityDisplayObj,
             "visibility": protocolVisibilityObj
         }
     };

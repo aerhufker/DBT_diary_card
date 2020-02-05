@@ -7,14 +7,12 @@
     "ui": {
         "inputType": "radio"
     },
-    "question": {
-        "en": "Did you achieve this goal?"
-    },
+    "question": "Did you achieve this goal?",
     "responseOptions": {
         "choices": [
             {
                 "schema:value": 0,
-                "schema:name": "Yes ",
+                "schema:name": "Yes",
                 "@type": "schema:option"
             },
             {

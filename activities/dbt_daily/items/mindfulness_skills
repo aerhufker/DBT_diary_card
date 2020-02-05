@@ -12,37 +12,38 @@
         "choices": [
             {
                 "schema:value": 1,
-                "schema:name": "Wise Mind ",
+                "schema:name": "Wise Mind",
                 "@type": "schema:option"
             },
             {
                 "schema:value": 2,
-                "schema:name": "Observe: Just notice without reacting ",
+                "schema:name": "Observe: Just notice without reacting",
                 "@type": "schema:option"
             },
             {
                 "schema:value": 3,
                 "schema:name": "Describe: Put words on",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/openmoji/master/color/72x72/label emotion.png"
             },
             {
                 "schema:value": 4,
-                "schema:name": "Participate: Enter into the experience ",
+                "schema:name": "Participate: Enter into the experience",
                 "@type": "schema:option"
             },
             {
                 "schema:value": 5,
-                "schema:name": "Nonjudgmental Stance ",
+                "schema:name": "Nonjudgmental Stance",
                 "@type": "schema:option"
             },
             {
                 "schema:value": 6,
-                "schema:name": "One-mindfully in the moment ",
+                "schema:name": "One-mindfully in the moment",
                 "@type": "schema:option"
             },
             {
                 "schema:value": 7,
-                "schema:name": "Effectiveness: Focus on what works ",
+                "schema:name": "Effectiveness: Focus on what works",
                 "@type": "schema:option"
             },
             {
@@ -52,7 +53,5 @@
             }
         ]
     },
-    "question": {
-        "en": "Mindfulness Skills (Check skills used)"
-    }
+    "question": "Mindfulness Skills (Check skills used)"
 }

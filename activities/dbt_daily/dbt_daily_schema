@@ -71,26 +71,6 @@
         {
             "variableName": "distress_tolerance",
             "isAbout": "distress_tolerance"
-        },
-        {
-            "variableName": "module_of_the_week",
-            "isAbout": "module_of_the_week"
-        },
-        {
-            "variableName": "important_events",
-            "isAbout": "important_events"
-        },
-        {
-            "variableName": "daily_goal",
-            "isAbout": "daily_goal"
-        },
-        {
-            "variableName": "goal_achieve",
-            "isAbout": "goal_achieve"
-        },
-        {
-            "variableName": "goal_obstacles",
-            "isAbout": "goal_obstacles"
         }
     ],
     "ui": {
@@ -109,12 +89,7 @@
             "mindfulness_skills",
             "interpersonal_skills",
             "emotion_regulation",
-            "distress_tolerance",
-            "module_of_the_week",
-            "important_events",
-            "daily_goal",
-            "goal_achieve",
-            "goal_obstacles"
+            "distress_tolerance"
         ],
         "shuffle": false,
         "visibility": {
@@ -132,12 +107,7 @@
             "mindfulness_skills": true,
             "interpersonal_skills": true,
             "emotion_regulation": true,
-            "distress_tolerance": true,
-            "module_of_the_week": true,
-            "important_events": true,
-            "daily_goal": true,
-            "goal_achieve": true,
-            "goal_obstacles": "goal_achieve == 1 "
+            "distress_tolerance": true
         }
     }
 }
