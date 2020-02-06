@@ -4,9 +4,7 @@
     ],
     "@type": "reproschema:Field",
     "skos:altLabel": "shame_guilt",
-    "preamble": {
-        "en": "Emotions:"
-    },
+    "preamble": "Emotions:",
     "ui": {
         "inputType": "slider"
     },

@@ -1,0 +1,8 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "target_behaviors_table",
+    "preamble": "Target Behaviors:"
+}

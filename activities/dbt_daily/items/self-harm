@@ -4,9 +4,7 @@
     ],
     "@type": "reproschema:Field",
     "skos:altLabel": "self-harm",
-    "preamble": {
-        "en": "Target Behaviors:"
-    },
+    "preamble": "Target Behaviors:",
     "ui": {
         "inputType": "slider"
     },

@@ -1,9 +1,12 @@
 Variable / Field Name,Section Header,Form Name,Form Display Name,Form Note,Field Type,multipleChoice,Field Label,"Choices, Calculations, OR Slider Labels",minVal,maxVal,Branching Logic (Show field only if...)
+emotions_table,Emotions:,dbt_daily,DBT Diary Card,"Your daily diary to log your emotions, behaviors, and progress",,,,,,,
 happiness,Emotions:,dbt_daily,DBT Diary Card,"Your daily diary to log your emotions, behaviors, and progress",slider,,Happiness,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
 sadness,Emotions:,dbt_daily,DBT Diary Card,"Your daily diary to log your emotions, behaviors, and progress",slider,,Sadness,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
 anxiety_fear,Emotions:,dbt_daily,DBT Diary Card,"Your daily diary to log your emotions, behaviors, and progress",slider,,Anxiety/Fear,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
 anger,Emotions:,dbt_daily,DBT Diary Card,"Your daily diary to log your emotions, behaviors, and progress",slider,,Anger,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
 shame_guilt,Emotions:,dbt_daily,DBT Diary Card,"Your daily diary to log your emotions, behaviors, and progress",slider,,Shame/Guilt,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
+target_behaviors_table,Target Behaviors:,dbt_daily,DBT Diary Card,"Your daily diary to log your emotions, behaviors, and progress",,,,,,,
+target_behaviors_act_table,Target Behaviors:,dbt_daily,DBT Diary Card,"Your daily diary to log your emotions, behaviors, and progress",,,,,,,
 suicide,Target Behaviors:,dbt_daily,DBT Diary Card,"Your daily diary to log your emotions, behaviors, and progress",slider,,How intense were your urges for **suicide** today?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
 suicide_act,Target Behaviors:,dbt_daily,DBT Diary Card,"Your daily diary to log your emotions, behaviors, and progress",radio,,Did you act on the urge?,"1, Yes | 1, No",,,[suicide] > 1
 self-harm,Target Behaviors:,dbt_daily,DBT Diary Card,"Your daily diary to log your emotions, behaviors, and progress",slider,,How intense were your urges for **self-harm** today?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,

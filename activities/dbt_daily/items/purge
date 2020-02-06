@@ -4,9 +4,7 @@
     ],
     "@type": "reproschema:Field",
     "skos:altLabel": "purge",
-    "preamble": {
-        "en": "Target Behaviors:"
-    },
+    "preamble": "Target Behaviors:",
     "ui": {
         "inputType": "slider"
     },

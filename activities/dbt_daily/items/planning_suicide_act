@@ -4,9 +4,7 @@
     ],
     "@type": "reproschema:Field",
     "skos:altLabel": "planning_suicide_act",
-    "preamble": {
-        "en": "Target Behaviors:"
-    },
+    "preamble": "Target Behaviors:",
     "ui": {
         "inputType": "radio"
     },

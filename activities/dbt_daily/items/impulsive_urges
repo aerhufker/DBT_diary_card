@@ -4,9 +4,7 @@
     ],
     "@type": "reproschema:Field",
     "skos:altLabel": "impulsive_urges",
-    "preamble": {
-        "en": "Target Behaviors:"
-    },
+    "preamble": "Target Behaviors:",
     "ui": {
         "inputType": "slider"
     },

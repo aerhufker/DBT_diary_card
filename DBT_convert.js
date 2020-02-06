@@ -4,7 +4,7 @@
 const protocolName = "DBT_diary_card"
 
 //2. your protocol display name: this will show up in the app and be parsed as a string
-const protocolDisplayName = "DBT Daily Diary Card v0.2"
+const protocolDisplayName = "DBT Daily Diary Card v0.3"
 
 //2. create your raw github repo URL
 const userName = 'hotavocado'
@@ -425,10 +425,13 @@ function processRow(form, data){
                 rowData[current_key] = questions;
                 }
     
-            //Parse preamble and description
-            else if ((schemaMap[current_key] ==='schema:description'
+            //Parse question, preamble, and description
+            else if ((schemaMap[current_key] ==='question' || schemaMap[current_key] ==='schema:description'
                 || schemaMap[current_key] === 'preamble') && data[current_key] !== '') {
-                let questions = parseHtml(data[current_key]);
+                let questions = data[current_key];
+                // Keep return carriage
+                questions = questions.replace(/\\r/g, '\r');
+                questions = questions.replace(/\\n/g, '\n');
                 console.log(231, form, schemaMap[current_key], questions);
                 rowData[schemaMap[current_key]] = questions;
             }

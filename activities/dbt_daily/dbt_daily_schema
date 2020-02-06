@@ -13,6 +13,10 @@
     "scoringLogic": {},
     "variableMap": [
         {
+            "variableName": "emotions_table",
+            "isAbout": "emotions_table"
+        },
+        {
             "variableName": "happiness",
             "isAbout": "happiness"
         },
@@ -31,6 +35,14 @@
         {
             "variableName": "shame_guilt",
             "isAbout": "shame_guilt"
+        },
+        {
+            "variableName": "target_behaviors_table",
+            "isAbout": "target_behaviors_table"
+        },
+        {
+            "variableName": "target_behaviors_act_table",
+            "isAbout": "target_behaviors_act_table"
         },
         {
             "variableName": "suicide",
@@ -99,11 +111,14 @@
     ],
     "ui": {
         "order": [
+            "emotions_table",
             "happiness",
             "sadness",
             "anxiety_fear",
             "anger",
             "shame_guilt",
+            "target_behaviors_table",
+            "target_behaviors_act_table",
             "suicide",
             "suicide_act",
             "self-harm",
@@ -123,11 +138,14 @@
         ],
         "shuffle": false,
         "visibility": {
+            "emotions_table": true,
             "happiness": true,
             "sadness": true,
             "anxiety_fear": true,
             "anger": true,
             "shame_guilt": true,
+            "target_behaviors_table": true,
+            "target_behaviors_act_table": true,
             "suicide": true,
             "suicide_act": "suicide > 1",
             "self-harm": true,

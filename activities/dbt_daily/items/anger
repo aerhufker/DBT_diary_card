@@ -4,9 +4,7 @@
     ],
     "@type": "reproschema:Field",
     "skos:altLabel": "anger",
-    "preamble": {
-        "en": "Emotions:"
-    },
+    "preamble": "Emotions:",
     "ui": {
         "inputType": "slider"
     },
