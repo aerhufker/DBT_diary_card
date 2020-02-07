@@ -6,7 +6,10 @@
     "skos:altLabel": "picking_scratching_act",
     "preamble": "Target Behaviors:",
     "ui": {
-        "inputType": "radio"
+        "inputType": "radio",
+        "allow": [
+            "autoAdvance"
+        ]
     },
     "question": "Did you act on the urge?",
     "responseOptions": {
@@ -17,7 +20,7 @@
                 "@type": "schema:option"
             },
             {
-                "schema:value": 1,
+                "schema:value": 0,
                 "schema:name": "No",
                 "@type": "schema:option"
             }

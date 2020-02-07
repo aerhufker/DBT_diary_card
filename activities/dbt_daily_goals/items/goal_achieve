@@ -5,7 +5,10 @@
     "@type": "reproschema:Field",
     "skos:altLabel": "goal_achieve",
     "ui": {
-        "inputType": "radio"
+        "inputType": "radio",
+        "allow": [
+            "autoAdvance"
+        ]
     },
     "question": "Did you achieve this goal?",
     "responseOptions": {
