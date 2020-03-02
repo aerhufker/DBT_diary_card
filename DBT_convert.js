@@ -28,7 +28,7 @@ let activityDisplayObj = {
 };
 */
 //5. Path to your README.md file, that will show up in the 'About' tab of the applet
-let protocolAboutPath = `${yourRepoURL}/protocols/${protocolName}/README.md`
+let protocolAboutPath = `${yourRepoURL}/README.md`
 
 
 /* ************ Constants **************************************************** */

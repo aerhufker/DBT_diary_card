@@ -52,7 +52,7 @@
           "@type": "schema:Text",
           "schema:name": "label",
           "schema:value": "Shame/Guilt"
-        },
+        }
       ]
     }
   ]

@@ -8,7 +8,7 @@
     "skos:prefLabel": "DBT Daily Diary Card v0.4",
     "skos:altLabel": "DBT_diary_card_schema",
     "schema:description": "Pilot applet for DBT daily diary card",
-    "schema:about": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/protocols/DBT_diary_card/README.md",
+    "schema:about": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/README.md",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "variableMap": [
