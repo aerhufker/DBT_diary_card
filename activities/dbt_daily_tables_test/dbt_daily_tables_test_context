@@ -1,0 +1,18 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "dbt_daily_tables_test": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/activities/dbt_daily_tables_test/items/",
+        "emotions_table": {
+            "@id": "dbt_daily_tables_test:emotions_table",
+            "@type": "@id"
+        },
+        "target_behaviors_table": {
+            "@id": "dbt_daily_tables_test:target_behaviors_table",
+            "@type": "@id"
+        },
+        "target_behaviors_act_table": {
+            "@id": "dbt_daily_tables_test:target_behaviors_act_table",
+            "@type": "@id"
+        }
+    }
+}

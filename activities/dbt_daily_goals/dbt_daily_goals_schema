@@ -41,7 +41,7 @@
             "important_events": true,
             "daily_goal": true,
             "goal_achieve": true,
-            "goal_obstacles": "goal_achieve == 1 | goal_achieve == 2"
+            "goal_obstacles": "goal_achieve > 0"
         }
     }
 }
