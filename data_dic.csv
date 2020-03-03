@@ -30,7 +30,7 @@ emotions_table,Emotions:,dbt_daily_tables_test,Daily Diary Card (Test Tables),Te
 target_behaviors_table,Target Behaviors:,dbt_daily_tables_test,Daily Diary Card (Test Tables),Testing table input format,,,,,,,,,,
 target_behaviors_act_table,Target Behaviors:,dbt_daily_tables_test,Daily Diary Card (Test Tables),Testing table input format,,,,,,,,,,
 emotions_instructions,Emotions,dbt_daily_images,Daily Diary Card (With some images),Testing some images,dayNightEmotion.png,200x200,markdown-message,,,"In this section, you'll be asked to rate the emotions you experienced today.",,,,
-happiness,,dbt_daily_images,Daily Diary Card (With some images),Testing some images,IF604.png,150x150,slider,,,Happiness,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
+happiness,,dbt_daily_images,Daily Diary Card (With some images),Testing some images,1F604.png,150x150,slider,,,Happiness,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
 sadness,,dbt_daily_images,Daily Diary Card (With some images),Testing some images,1F622.png,150x150,slider,,,Sadness,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
 anxiety_fear,,dbt_daily_images,Daily Diary Card (With some images),Testing some images,1F630.png,150x150,slider,,,Anxiety/Fear,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
 anger,,dbt_daily_images,Daily Diary Card (With some images),Testing some images,1F92C.png,150x150,slider,,,Anger,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
@@ -52,7 +52,7 @@ mindfulness_skills,,dbt_daily_images,Daily Diary Card (With some images),Testing
 interpersonal_skills,,dbt_daily_images,Daily Diary Card (With some images),Testing some images,,,radio,1,,Interpersonal Skills\r\n\r\n(Check skills used),"1, Objective Effectiveness (DEAR MAN) | 2, Relationship Effectiveness (GIVE) | 3, Self-respect Effectivness (FAST) | 4, Dialectics | 5, I did not use any skills",,,
 emotion_regulation,,dbt_daily_images,Daily Diary Card (With some images),Testing some images,,,radio,1,,Emotion Regulation\r\n\r\n(Check skills used),"1, Reduced Vulnerability (PLEASE) | 2, Accumulate Positive Experiences | 3, Build Mastery | 4, Cope Ahead | 5, Check the Facts | 6, Problem Solve | 7, Opposite Action | 8, I did not use any skills",,,
 distress_tolerance,,dbt_daily_images,Daily Diary Card (With some images),Testing some images,,,radio,1,,Distress Tolerance\r\n\r\n(Check skills used),"1, STOP | 2, Distract (Wise Mind ACCEPTS) | 3, Self-soothe | 4, TIPP | 5, IMPROVE the Moment | 6, Pros and Cons | 7, Radical Acceptance | 8, I did not use any skills",,,
-important_events,,dbt_daily_goals_images,Events and Goals (With some images),Testing some images,IF4AD.png,150x150,text,,,What important events happened today?,,,,
+important_events,,dbt_daily_goals_images,Events and Goals (With some images),Testing some images,1F4AD.png,150x150,text,,,What important events happened today?,,,,
 daily_goal,,dbt_daily_goals_images,Events and Goals (With some images),Testing some images,goal.png,150x150,text,,,What was your goal for today?,,,,
 goal_achieve,,dbt_daily_goals_images,Events and Goals (With some images),Testing some images,1F3C6.png,150x150,radio,,autoAdvance,Did you achieve this goal?,"0, Yes | 1, Partially | 2, No",,,
 goal_obstacles,,dbt_daily_goals_images,Events and Goals (With some images),Testing some images,brickwall.png,150x150,text,,,What got in the way?,,,,[goal_achieve] > 0
