@@ -1,0 +1,161 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/activities/dbt_daily_images/dbt_daily_images_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "dbt_daily_images_schema",
+    "skos:prefLabel": "Daily Diary Card (With some images)",
+    "skos:altLabel": "dbt_daily_images_schema",
+    "schema:description": "Testing some images",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "scoringLogic": {},
+    "variableMap": [
+        {
+            "variableName": "emotions_instructions",
+            "isAbout": "emotions_instructions"
+        },
+        {
+            "variableName": "happiness",
+            "isAbout": "happiness"
+        },
+        {
+            "variableName": "sadness",
+            "isAbout": "sadness"
+        },
+        {
+            "variableName": "anxiety_fear",
+            "isAbout": "anxiety_fear"
+        },
+        {
+            "variableName": "anger",
+            "isAbout": "anger"
+        },
+        {
+            "variableName": "shame_guilt",
+            "isAbout": "shame_guilt"
+        },
+        {
+            "variableName": "target_behaviors_instructions",
+            "isAbout": "target_behaviors_instructions"
+        },
+        {
+            "variableName": "suicide",
+            "isAbout": "suicide"
+        },
+        {
+            "variableName": "suicide_act",
+            "isAbout": "suicide_act"
+        },
+        {
+            "variableName": "self-harm",
+            "isAbout": "self-harm"
+        },
+        {
+            "variableName": "self-harm_act",
+            "isAbout": "self-harm_act"
+        },
+        {
+            "variableName": "impulsive_urges",
+            "isAbout": "impulsive_urges"
+        },
+        {
+            "variableName": "impulsive_urges_act",
+            "isAbout": "impulsive_urges_act"
+        },
+        {
+            "variableName": "picking_scratching",
+            "isAbout": "picking_scratching"
+        },
+        {
+            "variableName": "picking_scratching_act",
+            "isAbout": "picking_scratching_act"
+        },
+        {
+            "variableName": "planning_suicide",
+            "isAbout": "planning_suicide"
+        },
+        {
+            "variableName": "planning_suicide_act",
+            "isAbout": "planning_suicide_act"
+        },
+        {
+            "variableName": "purge",
+            "isAbout": "purge"
+        },
+        {
+            "variableName": "purge_act",
+            "isAbout": "purge_act"
+        },
+        {
+            "variableName": "mindfulness_skills",
+            "isAbout": "mindfulness_skills"
+        },
+        {
+            "variableName": "interpersonal_skills",
+            "isAbout": "interpersonal_skills"
+        },
+        {
+            "variableName": "emotion_regulation",
+            "isAbout": "emotion_regulation"
+        },
+        {
+            "variableName": "distress_tolerance",
+            "isAbout": "distress_tolerance"
+        }
+    ],
+    "ui": {
+        "order": [
+            "emotions_instructions",
+            "happiness",
+            "sadness",
+            "anxiety_fear",
+            "anger",
+            "shame_guilt",
+            "target_behaviors_instructions",
+            "suicide",
+            "suicide_act",
+            "self-harm",
+            "self-harm_act",
+            "impulsive_urges",
+            "impulsive_urges_act",
+            "picking_scratching",
+            "picking_scratching_act",
+            "planning_suicide",
+            "planning_suicide_act",
+            "purge",
+            "purge_act",
+            "mindfulness_skills",
+            "interpersonal_skills",
+            "emotion_regulation",
+            "distress_tolerance"
+        ],
+        "shuffle": false,
+        "visibility": {
+            "emotions_instructions": true,
+            "happiness": true,
+            "sadness": true,
+            "anxiety_fear": true,
+            "anger": true,
+            "shame_guilt": true,
+            "target_behaviors_instructions": true,
+            "suicide": true,
+            "suicide_act": "suicide > 1",
+            "self-harm": true,
+            "self-harm_act": "self-harm > 1",
+            "impulsive_urges": true,
+            "impulsive_urges_act": "impulsive_urges > 1",
+            "picking_scratching": true,
+            "picking_scratching_act": "picking_scratching > 1",
+            "planning_suicide": true,
+            "planning_suicide_act": "planning_suicide > 1",
+            "purge": true,
+            "purge_act": "purge > 1",
+            "mindfulness_skills": true,
+            "interpersonal_skills": true,
+            "emotion_regulation": true,
+            "distress_tolerance": true
+        }
+    }
+}

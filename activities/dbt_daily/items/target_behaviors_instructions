@@ -1,0 +1,11 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "target_behaviors_instructions",
+    "ui": {
+        "inputType": "markdown-message"
+    },
+    "question": "In this section, you'll be asked about your target behaviors for today. "
+}

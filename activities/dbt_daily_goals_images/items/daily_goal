@@ -1,0 +1,11 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "daily_goal",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": "\r\n\r\n![goal.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/imagesgoal.png =150x150)\r\n\r\nWhat was your goal for today?"
+}

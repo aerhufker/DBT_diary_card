@@ -1,0 +1,47 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "happiness",
+    "ui": {
+        "inputType": "slider"
+    },
+    "question": "\r\n\r\n![IF604.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/imagesIF604.png =150x150)\r\n\r\nHappiness",
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": "0",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 1,
+                "schema:name": "1",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2,
+                "schema:name": "2",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 3,
+                "schema:name": "3",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 4,
+                "schema:name": "4",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 5,
+                "schema:name": "5",
+                "@type": "schema:option"
+            }
+        ],
+        "schema:minValue": "0",
+        "schema:maxValue": "5"
+    }
+}

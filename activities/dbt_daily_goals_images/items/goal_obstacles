@@ -1,0 +1,11 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "goal_obstacles",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": "\r\n\r\n![brickwall.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/imagesbrickwall.png =150x150)\r\n\r\nWhat got in the way?"
+}

@@ -13,6 +13,14 @@
         "dbt_daily_tables_test": {
             "@id": "activity_path:dbt_daily_tables_test/dbt_daily_tables_test_schema",
             "@type": "@id"
+        },
+        "dbt_daily_images": {
+            "@id": "activity_path:dbt_daily_images/dbt_daily_images_schema",
+            "@type": "@id"
+        },
+        "dbt_daily_goals_images": {
+            "@id": "activity_path:dbt_daily_goals_images/dbt_daily_goals_images_schema",
+            "@type": "@id"
         }
     }
 }

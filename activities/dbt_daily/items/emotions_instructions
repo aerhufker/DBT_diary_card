@@ -1,0 +1,12 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "emotions_instructions",
+    "preamble": "Emotions",
+    "ui": {
+        "inputType": "markdown-message"
+    },
+    "question": "In this section, you'll be asked to rate the emotions you experienced today."
+}

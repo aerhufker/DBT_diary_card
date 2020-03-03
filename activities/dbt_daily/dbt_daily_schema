@@ -5,13 +5,17 @@
     ],
     "@type": "reproschema:Activity",
     "@id": "dbt_daily_schema",
-    "skos:prefLabel": "DBT Diary Card",
+    "skos:prefLabel": "Daily Diary Card",
     "skos:altLabel": "dbt_daily_schema",
     "schema:description": "Your daily diary to log your emotions, behaviors, and progress",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "scoringLogic": {},
     "variableMap": [
+        {
+            "variableName": "emotions_instructions",
+            "isAbout": "emotions_instructions"
+        },
         {
             "variableName": "happiness",
             "isAbout": "happiness"
@@ -31,6 +35,10 @@
         {
             "variableName": "shame_guilt",
             "isAbout": "shame_guilt"
+        },
+        {
+            "variableName": "target_behaviors_instructions",
+            "isAbout": "target_behaviors_instructions"
         },
         {
             "variableName": "suicide",
@@ -99,11 +107,13 @@
     ],
     "ui": {
         "order": [
+            "emotions_instructions",
             "happiness",
             "sadness",
             "anxiety_fear",
             "anger",
             "shame_guilt",
+            "target_behaviors_instructions",
             "suicide",
             "suicide_act",
             "self-harm",
@@ -123,11 +133,13 @@
         ],
         "shuffle": false,
         "visibility": {
+            "emotions_instructions": true,
             "happiness": true,
             "sadness": true,
             "anxiety_fear": true,
             "anger": true,
             "shame_guilt": true,
+            "target_behaviors_instructions": true,
             "suicide": true,
             "suicide_act": "suicide > 1",
             "self-harm": true,

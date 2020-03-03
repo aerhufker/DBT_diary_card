@@ -2,6 +2,10 @@
     "@context": {
         "@version": 1.1,
         "dbt_daily": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/activities/dbt_daily/items/",
+        "emotions_instructions": {
+            "@id": "dbt_daily:emotions_instructions",
+            "@type": "@id"
+        },
         "happiness": {
             "@id": "dbt_daily:happiness",
             "@type": "@id"
@@ -20,6 +24,10 @@
         },
         "shame_guilt": {
             "@id": "dbt_daily:shame_guilt",
+            "@type": "@id"
+        },
+        "target_behaviors_instructions": {
+            "@id": "dbt_daily:target_behaviors_instructions",
             "@type": "@id"
         },
         "suicide": {

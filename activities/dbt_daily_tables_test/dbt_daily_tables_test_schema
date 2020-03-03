@@ -5,7 +5,7 @@
     ],
     "@type": "reproschema:Activity",
     "@id": "dbt_daily_tables_test_schema",
-    "skos:prefLabel": "DBT Diary Card (Test Tables)",
+    "skos:prefLabel": "Daily Diary Card (Test Tables)",
     "skos:altLabel": "dbt_daily_tables_test_schema",
     "schema:description": "Testing table input format",
     "schema:schemaVersion": "0.0.1",

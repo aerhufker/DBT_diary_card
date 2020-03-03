@@ -1,0 +1,11 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "important_events",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": "\r\n\r\n![IF4AD.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/imagesIF4AD.png =150x150)\r\n\r\nWhat important events happened today?"
+}

@@ -1,0 +1,11 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "target_behaviors_instructions",
+    "ui": {
+        "inputType": "markdown-message"
+    },
+    "question": "\r\n\r\n![dayNightTarget.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/imagesdayNightTarget.png =200x200)\r\n\r\nIn this section, you'll be asked about your target behaviors for today. "
+}

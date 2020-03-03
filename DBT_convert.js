@@ -4,7 +4,7 @@
 const protocolName = "DBT_diary_card"
 
 //2. your protocol display name: this will show up in the app and be parsed as a string
-const protocolDisplayName = "DBT Daily Diary Card v0.5"
+const protocolDisplayName = "DBT Daily Diary Card v0.6"
 
 //2. create your raw github repo URL
 const userName = 'hotavocado'
@@ -17,7 +17,7 @@ let yourRepoURL = `https://raw.githubusercontent.com/${userName}/${repoName}/${b
 let protocolDescription = "Pilot applet for DBT daily diary card"
 
 //4. where are you hosting your images?
-let imagePath = 'https://raw.githubusercontent.com/hotavocado/openmoji/master/color/72x72/'
+let imagePath = `https://raw.githubusercontent.com/${userName}/${repoName}/${branchName}/images`
 
 /* hard coded activity display object
 let activityDisplayObj = {
@@ -55,7 +55,8 @@ const schemaMap = {
     "Branching Logic (Show field only if...)": "visibility",
     "multipleChoice": "multipleChoice",
     "responseType": "@type",
-    "headerImage": "headerImage"
+    "headerImage": "headerImage",
+    "headerImageSize":"headerImageSize"
 
 };
 
@@ -420,46 +421,67 @@ function processRow(form, data){
 
             //Parse headerImage
             else if (schemaMap[current_key] === 'headerImage' && data[current_key] !== '') {
-                let questions = '\r\n\r\n![' + data[current_key] + '](' + imagePath + data[current_key] + '.png)\r\n\r\n';
+
+                let questions = '\r\n\r\n![' + data[current_key] + '](' + imagePath + data[current_key];
                 //console.log(231, form, schemaMap[current_key], questions);
                 rowData[current_key] = questions;
+                  
                 }
     
-            //Parse question, preamble, and description
-            else if ((schemaMap[current_key] ==='question' || schemaMap[current_key] ==='schema:description'
-                || schemaMap[current_key] === 'preamble') && data[current_key] !== '') {
-                let questions = data[current_key];
-                // Keep return carriage
-                questions = questions.replace(/\\r/g, '\r');
-                questions = questions.replace(/\\n/g, '\n');
-                console.log(231, form, schemaMap[current_key], questions);
-                rowData[schemaMap[current_key]] = questions;
+    
+                //Parse headerImageSize
+                else if (schemaMap[current_key] === 'headerImageSize' && data[current_key] !== '') {
+                
+                if (data[current_key] == '') {
+                    let questions = ')\r\n\r\n';
+                    //console.log(231, form, schemaMap[current_key], questions);
+                    rowData[current_key] = questions;
+                }
+    
+                else {
+                    let questions = ' =' + data[current_key] + ')\r\n\r\n';
+                    //console.log(231, form, schemaMap[current_key], questions);
+                    rowData[current_key] = questions;
+                    }
+                }
+    
+                 //Parse question, preamble, and description
+                 else if ((schemaMap[current_key] ==='question' || schemaMap[current_key] ==='schema:description'
+                 || schemaMap[current_key] === 'preamble') && data[current_key] !== '') {
+                 let questions = data[current_key];
+                 // Keep return carriage and quotation marks
+                 questions = questions.replace(/\\r/g, '\r');
+                 questions = questions.replace(/\\n/g, '\n');
+                 console.log(231, form, schemaMap[current_key], questions);
+                 rowData[schemaMap[current_key]] = questions;
+                }
+    
+                // non-nested schema elements
+                else if (data[current_key] !== '')
+                    rowData[schemaMap[current_key]] = data[current_key];
             }
-
-            // non-nested schema elements
-            else if (data[current_key] !== '')
-                rowData[schemaMap[current_key]] = data[current_key];
-        }
-        // insert non-existing mapping as is for now
-        // TODO: check with satra if this is okay
-        // else if (current_key !== 'Form Name') {
-        //     rowData[camelcase(current_key)] = data[current_key];
-        // }
-        // todo: requiredValue - should be true or false (instead of y or n)
-        // todo: what does "textValidationTypeOrShowSliderNumber": "number" mean along with inputType: "text" ?
-        // text with no value in validation column is -- text inputType
-        // text with value in validation as "number" is of inputType - integer
-        // text with value in validation as ddate_mdy is of inputType - date
-        // dropdown and autocomplete??
-    });
-
-    //merge the header image and question text
-    if (rowData['headerImage'] !== undefined) {
-
-    rowData['question'] = rowData['headerImage'] + rowData['question']
-    delete rowData['headerImage']
-
-    };
+            // insert non-existing mapping as is for now
+            // TODO: check with satra if this is okay
+            // else if (current_key !== 'Form Name') {
+            //     rowData[camelcase(current_key)] = data[current_key];
+            // }
+            // todo: requiredValue - should be true or false (instead of y or n)
+            // todo: what does "textValidationTypeOrShowSliderNumber": "number" mean along with inputType: "text" ?
+            // text with no value in validation column is -- text inputType
+            // text with value in validation as "number" is of inputType - integer
+            // text with value in validation as ddate_mdy is of inputType - date
+            // dropdown and autocomplete??
+        });
+    
+        //merge the header image and question text
+        if (rowData['headerImage'] !== undefined) {
+    
+        rowData['question'] = rowData['headerImage'] + rowData['headerImageSize'] + rowData['question']
+        delete rowData['headerImage']
+        delete rowData['headerImageSize']
+    
+        };
+    
 
     const field_name = data['Variable / Field Name'];
 
