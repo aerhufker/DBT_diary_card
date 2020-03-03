@@ -17,7 +17,7 @@ let yourRepoURL = `https://raw.githubusercontent.com/${userName}/${repoName}/${b
 let protocolDescription = "Pilot applet for DBT daily diary card"
 
 //4. where are you hosting your images?
-let imagePath = `https://raw.githubusercontent.com/${userName}/${repoName}/${branchName}/images`
+let imagePath = `https://raw.githubusercontent.com/${userName}/${repoName}/${branchName}/images/`
 
 /* hard coded activity display object
 let activityDisplayObj = {

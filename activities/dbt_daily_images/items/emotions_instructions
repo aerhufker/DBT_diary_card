@@ -8,5 +8,5 @@
     "ui": {
         "inputType": "markdown-message"
     },
-    "question": "\r\n\r\n![dayNightEmotion.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/imagesdayNightEmotion.png =200x200)\r\n\r\nIn this section, you'll be asked to rate the emotions you experienced today."
+    "question": "\r\n\r\n![dayNightEmotion.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/dayNightEmotion.png =200x200)\r\n\r\nIn this section, you'll be asked to rate the emotions you experienced today."
 }
