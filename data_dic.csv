@@ -5,8 +5,8 @@ sadness,,dbt_daily,Daily Diary Card,"Your daily diary to log your emotions, beha
 anxiety_fear,,dbt_daily,Daily Diary Card,"Your daily diary to log your emotions, behaviors, and progress",,,slider,,,Anxiety/Fear,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
 anger,,dbt_daily,Daily Diary Card,"Your daily diary to log your emotions, behaviors, and progress",,,slider,,,Anger,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
 shame_guilt,,dbt_daily,Daily Diary Card,"Your daily diary to log your emotions, behaviors, and progress",,,slider,,,Shame/Guilt,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
-target_behaviors_instructions,,dbt_daily,Daily Diary Card,"Your daily diary to log your emotions, behaviors, and progress",,,markdown-message,,,"In this section, you'll be asked about your target behaviors for today. ",,,,
-suicide,Target Behaviors,dbt_daily,Daily Diary Card,"Your daily diary to log your emotions, behaviors, and progress",,,slider,,,How intense were your urges for **suicide** today?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
+target_behaviors_instructions,Target Behaviors,dbt_daily,Daily Diary Card,"Your daily diary to log your emotions, behaviors, and progress",,,markdown-message,,,"In this section, you'll be asked about your target behaviors for today. ",,,,
+suicide,,dbt_daily,Daily Diary Card,"Your daily diary to log your emotions, behaviors, and progress",,,slider,,,How intense were your urges for **suicide** today?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
 suicide_act,,dbt_daily,Daily Diary Card,"Your daily diary to log your emotions, behaviors, and progress",,,radio,,autoAdvance,Did you act on the urge?,"1, Yes | 0, No",,,[suicide] > 1
 self-harm,,dbt_daily,Daily Diary Card,"Your daily diary to log your emotions, behaviors, and progress",,,slider,,,How intense were your urges for **self-harm** today?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
 self-harm_act,,dbt_daily,Daily Diary Card,"Your daily diary to log your emotions, behaviors, and progress",,,radio,,autoAdvance,Did you act on the urge?,"1, Yes | 0, No",,,[self-harm] > 1
@@ -35,8 +35,8 @@ sadness,,dbt_daily_images,Daily Diary Card (With some images),Testing some image
 anxiety_fear,,dbt_daily_images,Daily Diary Card (With some images),Testing some images,1F630.png,150x150,slider,,,Anxiety/Fear,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
 anger,,dbt_daily_images,Daily Diary Card (With some images),Testing some images,1F92C.png,150x150,slider,,,Anger,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
 shame_guilt,,dbt_daily_images,Daily Diary Card (With some images),Testing some images,1F61F.png,150x150,slider,,,Shame/Guilt,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
-target_behaviors_instructions,,dbt_daily_images,Daily Diary Card (With some images),Testing some images,dayNightTarget.png,200x200,markdown-message,,,"In this section, you'll be asked about your target behaviors for today. ",,,,
-suicide,Target Behaviors,dbt_daily_images,Daily Diary Card (With some images),Testing some images,,,slider,,,How intense were your urges for **suicide** today?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
+target_behaviors_instructions,Target Behaviors,dbt_daily_images,Daily Diary Card (With some images),Testing some images,dayNightTarget.png,200x200,markdown-message,,,"In this section, you'll be asked about your target behaviors for today. ",,,,
+suicide,,dbt_daily_images,Daily Diary Card (With some images),Testing some images,,,slider,,,How intense were your urges for **suicide** today?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
 suicide_act,,dbt_daily_images,Daily Diary Card (With some images),Testing some images,,,radio,,autoAdvance,Did you act on the urge?,"1, Yes | 0, No",,,[suicide] > 1
 self-harm,,dbt_daily_images,Daily Diary Card (With some images),Testing some images,,,slider,,,How intense were your urges for **self-harm** today?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",0,5,
 self-harm_act,,dbt_daily_images,Daily Diary Card (With some images),Testing some images,,,radio,,autoAdvance,Did you act on the urge?,"1, Yes | 0, No",,,[self-harm] > 1
