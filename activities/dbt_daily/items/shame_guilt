@@ -3,7 +3,7 @@
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
     ],
     "@type": "reproschema:Field",
-    "skos:altLabel": "shame_guilt",
+    "@id": "shame_guilt",
     "ui": {
         "inputType": "slider"
     },

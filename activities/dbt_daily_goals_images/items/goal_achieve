@@ -3,7 +3,7 @@
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
     ],
     "@type": "reproschema:Field",
-    "skos:altLabel": "goal_achieve",
+    "@id": "goal_achieve",
     "ui": {
         "inputType": "radio",
         "allow": [

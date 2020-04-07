@@ -3,7 +3,7 @@
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
     ],
     "@type": "reproschema:Field",
-    "skos:altLabel": "self-harm_act",
+    "@id": "self-harm_act",
     "ui": {
         "inputType": "radio",
         "allow": [

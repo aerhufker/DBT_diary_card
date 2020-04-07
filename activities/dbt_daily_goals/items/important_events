@@ -3,7 +3,7 @@
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
     ],
     "@type": "reproschema:Field",
-    "skos:altLabel": "important_events",
+    "@id": "important_events",
     "ui": {
         "inputType": "text"
     },

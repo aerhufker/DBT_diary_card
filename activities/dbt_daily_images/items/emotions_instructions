@@ -3,7 +3,7 @@
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
     ],
     "@type": "reproschema:Field",
-    "skos:altLabel": "emotions_instructions",
+    "@id": "emotions_instructions",
     "preamble": "Emotions",
     "ui": {
         "inputType": "markdown-message"

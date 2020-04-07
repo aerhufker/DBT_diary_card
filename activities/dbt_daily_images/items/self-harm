@@ -3,7 +3,7 @@
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
     ],
     "@type": "reproschema:Field",
-    "skos:altLabel": "self-harm",
+    "@id": "self-harm",
     "ui": {
         "inputType": "slider"
     },

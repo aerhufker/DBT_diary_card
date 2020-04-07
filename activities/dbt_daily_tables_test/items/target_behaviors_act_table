@@ -1,64 +1,8 @@
 {
-  "@context": [
-    "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
-  ],
-  "@type": "reproschema:Field",
-  "skos:prefLabel": "Table Counter",
-  "skos:altLabel": "target_behaviors_act_table",
-  "preamble": "Target Behaviors:",
-  "question": "Did you act on these your urges for these behaviors today? Yes = 1, No = 0",
-  "ui": {
-    "inputType": "tableCounter"
-  },
-  "inputOptions": [
-    {
-      "@type": "schema:ItemList",
-      "schema:name": "cols",
-      "schema:numberOfItems": 1,
-      "schema:itemListElement": [
-        {
-          "@type": "schema:Text",
-          "schema:name": "label",
-          "schema:value": "Yes/No"
-        }
-      ]
-    },
-    {
-      "@type": "schema:ItemList",
-      "schema:name": "rows",
-      "schema:numberOfItems": 6,
-      "schema:itemListElement": [
-        {
-          "@type": "schema:Text",
-          "schema:name": "label",
-          "schema:value": "Suicide"
-        },
-        {
-          "@type": "schema:Text",
-          "schema:name": "label",
-          "schema:value": "Self Harm"
-        },
-        {
-          "@type": "schema:Text",
-          "schema:name": "label",
-          "schema:value": "Impulsive Urges"
-        },
-         {
-          "@type": "schema:Text",
-          "schema:name": "label",
-          "schema:value": "Picking/Scratching"
-        },
-         {
-          "@type": "schema:Text",
-          "schema:name": "label",
-          "schema:value": "Planning for Suicide"
-        },
-         {
-          "@type": "schema:Text",
-          "schema:name": "label",
-          "schema:value": "Purging"
-        }
-      ]
-    }
-  ]
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "target_behaviors_act_table",
+    "preamble": "Target Behaviors:"
 }

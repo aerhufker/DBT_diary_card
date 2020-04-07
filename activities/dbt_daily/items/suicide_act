@@ -3,7 +3,7 @@
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
     ],
     "@type": "reproschema:Field",
-    "skos:altLabel": "suicide_act",
+    "@id": "suicide_act",
     "ui": {
         "inputType": "radio",
         "allow": [

@@ -3,7 +3,7 @@
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
     ],
     "@type": "reproschema:Field",
-    "skos:altLabel": "picking_scratching_act",
+    "@id": "picking_scratching_act",
     "ui": {
         "inputType": "radio",
         "allow": [

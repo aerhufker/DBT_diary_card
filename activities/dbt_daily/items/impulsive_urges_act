@@ -3,7 +3,7 @@
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
     ],
     "@type": "reproschema:Field",
-    "skos:altLabel": "impulsive_urges_act",
+    "@id": "impulsive_urges_act",
     "ui": {
         "inputType": "radio",
         "allow": [

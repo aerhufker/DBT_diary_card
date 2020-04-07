@@ -3,7 +3,7 @@
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
     ],
     "@type": "reproschema:Field",
-    "skos:altLabel": "planning_suicide",
+    "@id": "planning_suicide",
     "ui": {
         "inputType": "slider"
     },

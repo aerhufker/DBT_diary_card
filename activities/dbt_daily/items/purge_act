@@ -3,7 +3,7 @@
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
     ],
     "@type": "reproschema:Field",
-    "skos:altLabel": "purge_act",
+    "@id": "purge_act",
     "ui": {
         "inputType": "radio",
         "allow": [
