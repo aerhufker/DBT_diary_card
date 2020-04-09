@@ -5,7 +5,7 @@
     ],
     "@type": "reproschema:ActivitySet",
     "@id": "DBT_diary_card_schema",
-    "skos:prefLabel": "DBT Daily Diary Card v1.0",
+    "skos:prefLabel": "DBT Daily Diary Card v1.01",
     "skos:altLabel": "DBT_diary_card_schema",
     "schema:description": "Record your daily progress with Dialectical Behavorial Therapy",
     "schema:about": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/README.md",

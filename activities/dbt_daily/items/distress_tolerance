@@ -4,7 +4,6 @@
     ],
     "@type": "reproschema:Field",
     "@id": "distress_tolerance",
-    "preamble": "Distress Tolerance",
     "ui": {
         "inputType": "radio",
         "allow": [
@@ -18,45 +17,45 @@
                 "schema:value": 1,
                 "schema:name": "STOP",
                 "@type": "schema:option",
-                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngSTOP.png"
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/STOP.png"
             },
             {
                 "schema:value": 2,
                 "schema:name": "Distract (Wise Mind ACCEPTS)",
                 "@type": "schema:option",
-                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngdistract.png"
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/distract.png"
             },
             {
                 "schema:value": 3,
                 "schema:name": "Self-soothe",
                 "@type": "schema:option",
-                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngselfSoothe.png"
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/selfSoothe.png"
             },
             {
                 "schema:value": 4,
                 "schema:name": "TIPP",
                 "@type": "schema:option",
-                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngTIPP.png"
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/TIPP.png"
             },
             {
                 "schema:value": 5,
                 "schema:name": "IMPROVE the Moment",
                 "@type": "schema:option",
-                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngIMPROVE.png"
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/IMPROVE.png"
             },
             {
                 "schema:value": 6,
                 "schema:name": "Pros and Cons",
                 "@type": "schema:option",
-                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngproCons.png"
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/proCons.png"
             },
             {
                 "schema:value": 7,
                 "schema:name": "Radical Acceptance",
                 "@type": "schema:option",
-                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngradicalAcceptance.png"
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/radicalAcceptance.png"
             }
         ]
     },
-    "question": "\r\n\r\n![distressTolerance.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngdistressTolerance.png =250x250)\r\n\r\nPlease check the **Distress Tolerance** skills you used today:"
+    "question": "\r\n\r\n![distressTolerance.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/distressTolerance.png =250x250)\r\n\r\nPlease check the **Distress Tolerance** skills you used today:"
 }

@@ -10,7 +10,7 @@
             "autoAdvance"
         ]
     },
-    "question": "\r\n\r\n![behaviorsAct.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngbehaviorsAct.png =250x250)\r\n\r\nDid you **act** on the urge?",
+    "question": "\r\n\r\n![behaviorsAct.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/behaviorsAct.png =250x250)\r\n\r\nDid you **act** on the urge?",
     "responseOptions": {
         "choices": [
             {

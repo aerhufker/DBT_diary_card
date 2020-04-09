@@ -7,14 +7,9 @@
     "ui": {
         "inputType": "slider"
     },
-    "question": "\r\n\r\n![sadness.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngsadness.png =250x250)\r\n\r\nSadness",
+    "question": "\r\n\r\n![sadness.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/sadness.png =250x250)\r\n\r\nSadness",
     "responseOptions": {
         "choices": [
-            {
-                "schema:value": 0,
-                "schema:name": "0",
-                "@type": "schema:option"
-            },
             {
                 "schema:value": 1,
                 "schema:name": "1",
@@ -40,6 +35,8 @@
                 "schema:name": "5",
                 "@type": "schema:option"
             }
-        ]
+        ],
+        "schema:minValue": "very little",
+        "schema:maxValue": "very much"
     }
 }

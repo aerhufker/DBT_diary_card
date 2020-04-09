@@ -4,7 +4,7 @@
 const protocolName = "DBT_diary_card"
 
 //2. your protocol display name: this will show up in the app and be parsed as a string
-const protocolDisplayName = "DBT Daily Diary Card v1.0"
+const protocolDisplayName = "DBT Daily Diary Card v1.01"
 
 //2. create your raw github repo URL
 const userName = 'hotavocado'
@@ -17,7 +17,7 @@ let yourRepoURL = `https://raw.githubusercontent.com/${userName}/${repoName}/${b
 let protocolDescription = "Record your daily progress with Dialectical Behavorial Therapy"
 
 //4. where are you hosting your images?
-let imagePath = `https://raw.githubusercontent.com/${userName}/${repoName}/${branchName}/images/png`
+let imagePath = `https://raw.githubusercontent.com/${userName}/${repoName}/${branchName}/images/png/`
 
 /* hard coded activity display object
 let activityDisplayObj = {
