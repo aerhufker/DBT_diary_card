@@ -16,42 +16,44 @@
             {
                 "schema:value": 1,
                 "schema:name": "Reduced Vulnerability (PLEASE)",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/PLEASE.png"
             },
             {
                 "schema:value": 2,
                 "schema:name": "Accumulate Positive Experiences",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/accumulatePositive.png"
             },
             {
                 "schema:value": 3,
                 "schema:name": "Build Mastery",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/mastery.png"
             },
             {
                 "schema:value": 4,
                 "schema:name": "Cope Ahead",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/copeAhead.png"
             },
             {
                 "schema:value": 5,
                 "schema:name": "Check the Facts",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/checkFacts.png"
             },
             {
                 "schema:value": 6,
                 "schema:name": "Problem Solve",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/problemSolve.png"
             },
             {
                 "schema:value": 7,
                 "schema:name": "Opposite Action",
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 8,
-                "schema:name": "I did not use any skills",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/oppositeAction.png"
             }
         ]
     },

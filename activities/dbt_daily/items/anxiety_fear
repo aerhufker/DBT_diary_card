@@ -35,8 +35,6 @@
                 "schema:name": "5",
                 "@type": "schema:option"
             }
-        ],
-        "schema:minValue": "very little",
-        "schema:maxValue": "very much"
+        ]
     }
 }
