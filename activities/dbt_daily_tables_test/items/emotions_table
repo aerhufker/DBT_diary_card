@@ -1,8 +1,0 @@
-{
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
-    ],
-    "@type": "reproschema:Field",
-    "@id": "emotions_table",
-    "preamble": "Emotions:"
-}

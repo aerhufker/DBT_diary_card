@@ -4,8 +4,12 @@
     ],
     "@type": "reproschema:Field",
     "@id": "interpersonal_skills",
+    "preamble": "Interpersonal Effectiveness",
     "ui": {
-        "inputType": "radio"
+        "inputType": "radio",
+        "allow": [
+            "dontKnow"
+        ]
     },
     "responseOptions": {
         "multipleChoice": true,
@@ -13,29 +17,28 @@
             {
                 "schema:value": 1,
                 "schema:name": "Objective Effectiveness (DEAR MAN)",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngDEARMAN.png"
             },
             {
                 "schema:value": 2,
                 "schema:name": "Relationship Effectiveness (GIVE)",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngGIVE.png"
             },
             {
                 "schema:value": 3,
                 "schema:name": "Self-respect Effectivness (FAST)",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngFAST.png"
             },
             {
                 "schema:value": 4,
                 "schema:name": "Dialectics",
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 5,
-                "schema:name": "I did not use any skills",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngdialectics.png "
             }
         ]
     },
-    "question": "Interpersonal Skills\r\n\r\n(Check skills used)"
+    "question": "\r\n\r\n![interpersonalSkills.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pnginterpersonalSkills.png =250x250)\r\n\r\nPlease check the **Interpersonal Effectiveness** skills you used today:"
 }

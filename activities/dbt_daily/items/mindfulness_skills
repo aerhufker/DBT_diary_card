@@ -4,8 +4,12 @@
     ],
     "@type": "reproschema:Field",
     "@id": "mindfulness_skills",
+    "preamble": "Mindfulness",
     "ui": {
-        "inputType": "radio"
+        "inputType": "radio",
+        "allow": [
+            "dontKnow"
+        ]
     },
     "responseOptions": {
         "multipleChoice": true,
@@ -13,44 +17,46 @@
             {
                 "schema:value": 1,
                 "schema:name": "Wise Mind",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngwisemind.png"
             },
             {
                 "schema:value": 2,
                 "schema:name": "Observe: Just notice without reacting",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngobserve.png"
             },
             {
                 "schema:value": 3,
                 "schema:name": "Describe: Put words on/label emotion",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngdescribe.png"
             },
             {
                 "schema:value": 4,
                 "schema:name": "Participate: Enter into the experience",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngparticipate.png"
             },
             {
                 "schema:value": 5,
                 "schema:name": "Nonjudgmental Stance",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngnonjudgmental.png"
             },
             {
                 "schema:value": 6,
                 "schema:name": "One-mindfully in the moment",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngmoment.png"
             },
             {
                 "schema:value": 7,
                 "schema:name": "Effectiveness: Focus on what works",
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 8,
-                "schema:name": "I did not use any skills",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngeffectiveness.png"
             }
         ]
     },
-    "question": "Mindfulness Skills\r\n\r\n(Check skills used)"
+    "question": "\r\n\r\n![mindfulness.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngmindfulness.png =250x250)\r\n\r\nPlease check the **Mindfulness** skills you used today:"
 }

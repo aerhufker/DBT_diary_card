@@ -7,7 +7,7 @@
     "ui": {
         "inputType": "slider"
     },
-    "question": "Shame/Guilt",
+    "question": "\r\n\r\n![guiltShame.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngguiltShame.png =250x250)\r\n\r\nShame/Guilt",
     "responseOptions": {
         "choices": [
             {
@@ -40,8 +40,6 @@
                 "schema:name": "5",
                 "@type": "schema:option"
             }
-        ],
-        "schema:minValue": "0",
-        "schema:maxValue": "5"
+        ]
     }
 }

@@ -4,7 +4,7 @@
 const protocolName = "DBT_diary_card"
 
 //2. your protocol display name: this will show up in the app and be parsed as a string
-const protocolDisplayName = "DBT Daily Diary Card v0.7"
+const protocolDisplayName = "DBT Daily Diary Card v1.0"
 
 //2. create your raw github repo URL
 const userName = 'hotavocado'
@@ -14,10 +14,10 @@ const branchName = 'master'
 let yourRepoURL = `https://raw.githubusercontent.com/${userName}/${repoName}/${branchName}`
 
 //3. add a description to your protocol
-let protocolDescription = "Pilot applet for DBT daily diary card"
+let protocolDescription = "Record your daily progress with Dialectical Behavorial Therapy"
 
 //4. where are you hosting your images?
-let imagePath = `https://raw.githubusercontent.com/${userName}/${repoName}/${branchName}/images/`
+let imagePath = `https://raw.githubusercontent.com/${userName}/${repoName}/${branchName}/images/png`
 
 /* hard coded activity display object
 let activityDisplayObj = {
@@ -342,7 +342,7 @@ function processRow(form, data){
                         let cnameList = cs[1];
                         choiceObj['schema:name'] = cnameList;
                         choiceObj['@type'] = "schema:option";
-                        choiceObj['schema:image'] = imagePath + cs[2] + '.png';
+                        choiceObj['schema:image'] = imagePath + cs[2];
                         choiceList.push(choiceObj);
                     } else {
                     // for no image, create name and value pair for each choice option

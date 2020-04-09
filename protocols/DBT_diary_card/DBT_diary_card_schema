@@ -5,9 +5,9 @@
     ],
     "@type": "reproschema:ActivitySet",
     "@id": "DBT_diary_card_schema",
-    "skos:prefLabel": "DBT Daily Diary Card v0.7",
+    "skos:prefLabel": "DBT Daily Diary Card v1.0",
     "skos:altLabel": "DBT_diary_card_schema",
-    "schema:description": "Pilot applet for DBT daily diary card",
+    "schema:description": "Record your daily progress with Dialectical Behavorial Therapy",
     "schema:about": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/README.md",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
@@ -19,35 +19,17 @@
         {
             "variableName": "dbt_daily_goals",
             "isAbout": "dbt_daily_goals"
-        },
-        {
-            "variableName": "dbt_daily_tables_test",
-            "isAbout": "dbt_daily_tables_test"
-        },
-        {
-            "variableName": "dbt_daily_images",
-            "isAbout": "dbt_daily_images"
-        },
-        {
-            "variableName": "dbt_daily_goals_images",
-            "isAbout": "dbt_daily_goals_images"
         }
     ],
     "ui": {
         "order": [
             "dbt_daily",
-            "dbt_daily_goals",
-            "dbt_daily_tables_test",
-            "dbt_daily_images",
-            "dbt_daily_goals_images"
+            "dbt_daily_goals"
         ],
         "shuffle": false,
         "visibility": {
             "dbt_daily": true,
-            "dbt_daily_goals": true,
-            "dbt_daily_tables_test": true,
-            "dbt_daily_images": true,
-            "dbt_daily_goals_images": true
+            "dbt_daily_goals": true
         }
     }
 }

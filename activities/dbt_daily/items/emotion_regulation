@@ -4,8 +4,12 @@
     ],
     "@type": "reproschema:Field",
     "@id": "emotion_regulation",
+    "preamble": "Emotion Regulation",
     "ui": {
-        "inputType": "radio"
+        "inputType": "radio",
+        "allow": [
+            "dontKnow"
+        ]
     },
     "responseOptions": {
         "multipleChoice": true,
@@ -52,5 +56,5 @@
             }
         ]
     },
-    "question": "Emotion Regulation\r\n\r\n(Check skills used)"
+    "question": "\r\n\r\n![emotionRegulation.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngemotionRegulation.png =250x250)\r\n\r\nPlease check the **Emotion Regulation** skills you used today:"
 }

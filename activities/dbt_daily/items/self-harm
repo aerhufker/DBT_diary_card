@@ -7,7 +7,7 @@
     "ui": {
         "inputType": "slider"
     },
-    "question": "How intense were your urges for **self-harm** today?",
+    "question": "\r\n\r\n![behaviorsUrges.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/pngbehaviorsUrges.png =250x250)\r\n\r\nHow intense were your urges for **self-harm** today?",
     "responseOptions": {
         "choices": [
             {
@@ -40,8 +40,6 @@
                 "schema:name": "5",
                 "@type": "schema:option"
             }
-        ],
-        "schema:minValue": "0",
-        "schema:maxValue": "5"
+        ]
     }
 }
