@@ -10,7 +10,7 @@ Add description about daily diary card
 |:------------------------------------------------------------:|:--------------:|:--------------:|:--------------:|:--------------:|
 | <img src="images/svg/DBT.svg" width="200"><br>Applet Loadout | <img src="images/attribution/journal.svg" width="100"><br>source | <img src="images/attribution/cloudy.svg" width="100"><br>source  |  |  |
 | <img src="images/svg/emotionDay.svg" width="200"><br>Emotions over the day | <img src="images/attribution/person.svg" width="100"><br>source  |  <img src="images/attribution/cloudy.svg" width="100"><br>source  |                |                |
-| <img src="images/svg/sun.svg" width="200"><br>Happiness |         |                |                |                |
+| <img src="images/svg/happiness.svg" width="200"><br>Happiness |         |                |                |                |
 | <img src="images/svg/sadness.svg" width="200"><br>Sadness | <img src="images/attribution/winterTree.svg" width="100"><br>source | <img src="images/attribution/autumnLeaves.svg" width="100"><br>source|                |                |
 | <img src="images/svg/anxietyFear.svg" width="200"><br>Anxiety/Fear |<img src="images/attribution/jenga.svg" width="100"><br>source | <img src="images/attribution/egg.svg" width="100"><br>source |                |                |
 | <img src="images/svg/anger.svg" width="200"><br>Anger | <img src="images/attribution/pressure-gauge.svg" width="100"><br>source  | <img src="images/attribution/steam-iron.svg" width="100"><br>source |                |                |
