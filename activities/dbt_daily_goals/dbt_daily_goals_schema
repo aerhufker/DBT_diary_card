@@ -7,7 +7,7 @@
     "@id": "dbt_daily_goals_schema",
     "skos:prefLabel": "Events and Goals",
     "skos:altLabel": "dbt_daily_goals_schema",
-    "schema:description": "Your important events and goals for the day",
+    "schema:description": "Record your important events and goals for today",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "scoringLogic": {},

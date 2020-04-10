@@ -5,12 +5,13 @@
     ],
     "@type": "reproschema:ActivitySet",
     "@id": "DBT_diary_card_schema",
-    "skos:prefLabel": "DBT Daily Diary Card v1.02",
+    "skos:prefLabel": "DBT Daily Diary Card v1.03",
     "skos:altLabel": "DBT_diary_card_schema",
     "schema:description": "Record your daily progress with Dialectical Behavorial Therapy",
     "schema:about": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/README.md",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
+    "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/DBT.png",
     "variableMap": [
         {
             "variableName": "dbt_daily",

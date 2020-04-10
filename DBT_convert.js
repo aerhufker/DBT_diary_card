@@ -4,7 +4,7 @@
 const protocolName = "DBT_diary_card"
 
 //2. your protocol display name: this will show up in the app and be parsed as a string
-const protocolDisplayName = "DBT Daily Diary Card v1.02"
+const protocolDisplayName = "DBT Daily Diary Card v1.03"
 
 //2. create your raw github repo URL
 const userName = 'hotavocado'
@@ -555,6 +555,7 @@ function createProtocolSchema(protocolName, protocolContextUrl) {
         "schema:about": protocolAboutPath,
         "schema:schemaVersion": "0.0.1",
         "schema:version": "0.0.1",
+        "schema:image": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/DBT.png",
         // todo: preamble: Field Type = descriptive represents preamble in the CSV file., it also has branching logic. so should preamble be an item in our schema?
         "variableMap": protocolVariableMap,
         "ui": {
