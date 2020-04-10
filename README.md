@@ -3,7 +3,7 @@
 [Mindlogger](https://mindlogger.org/) applet for Dialectical Behavorial Therapy daily diary card.
 
 
-## Image Attribution and Showcase
+## Applet Images
 Here are the images used in the applet, as well as the images used in the process of creating them. Images without source images to the left were created from scratch. 
 
 | Applet Image                                                 | Image 1 | Image 2 | Image 3 | Image 4 |
