@@ -7,9 +7,14 @@
     "ui": {
         "inputType": "slider"
     },
-    "question": "\r\n\r\n![behaviorsUrges.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/behaviorsUrges.png =250x250)\r\n\r\nHow intense were your urges for **planning for suicide** today?",
+    "question": "\r\n\r\n![behaviorUrges.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/behaviorUrges.png =250x250)\r\n\r\nHow intense were your urges for **planning for suicide** today?",
     "responseOptions": {
         "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": "0",
+                "@type": "schema:option"
+            },
             {
                 "schema:value": 1,
                 "schema:name": "1",
