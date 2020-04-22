@@ -30,20 +30,20 @@
             "@id": "dbt_daily:target_behaviors_instructions",
             "@type": "@id"
         },
-        "suicide": {
-            "@id": "dbt_daily:suicide",
+        "suicide_urges": {
+            "@id": "dbt_daily:suicide_urges",
             "@type": "@id"
         },
         "suicide_act": {
             "@id": "dbt_daily:suicide_act",
             "@type": "@id"
         },
-        "self-harm": {
-            "@id": "dbt_daily:self-harm",
+        "self_harm_urges": {
+            "@id": "dbt_daily:self_harm_urges",
             "@type": "@id"
         },
-        "self-harm_act": {
-            "@id": "dbt_daily:self-harm_act",
+        "self_harm_act": {
+            "@id": "dbt_daily:self_harm_act",
             "@type": "@id"
         },
         "impulsive_urges": {
@@ -54,28 +54,28 @@
             "@id": "dbt_daily:impulsive_urges_act",
             "@type": "@id"
         },
-        "picking_scratching": {
-            "@id": "dbt_daily:picking_scratching",
+        "picking_scratching_urges": {
+            "@id": "dbt_daily:picking_scratching_urges",
             "@type": "@id"
         },
         "picking_scratching_act": {
             "@id": "dbt_daily:picking_scratching_act",
             "@type": "@id"
         },
-        "planning_suicide": {
-            "@id": "dbt_daily:planning_suicide",
+        "planning_suicide_urges": {
+            "@id": "dbt_daily:planning_suicide_urges",
             "@type": "@id"
         },
         "planning_suicide_act": {
             "@id": "dbt_daily:planning_suicide_act",
             "@type": "@id"
         },
-        "purge": {
-            "@id": "dbt_daily:purge",
+        "purging_urges": {
+            "@id": "dbt_daily:purging_urges",
             "@type": "@id"
         },
-        "purge_act": {
-            "@id": "dbt_daily:purge_act",
+        "purging_act": {
+            "@id": "dbt_daily:purging_act",
             "@type": "@id"
         },
         "mindfulness_skills": {

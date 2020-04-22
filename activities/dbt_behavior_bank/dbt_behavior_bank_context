@@ -1,0 +1,266 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "dbt_behavior_bank": "https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/activities/dbt_behavior_bank/items/",
+        "complete_homework": {
+            "@id": "dbt_behavior_bank:complete_homework",
+            "@type": "@id"
+        },
+        "socialize_others": {
+            "@id": "dbt_behavior_bank:socialize_others",
+            "@type": "@id"
+        },
+        "conflict_others": {
+            "@id": "dbt_behavior_bank:conflict_others",
+            "@type": "@id"
+        },
+        "conflict_others_number": {
+            "@id": "dbt_behavior_bank:conflict_others_number",
+            "@type": "@id"
+        },
+        "bed_time": {
+            "@id": "dbt_behavior_bank:bed_time",
+            "@type": "@id"
+        },
+        "wake_time": {
+            "@id": "dbt_behavior_bank:wake_time",
+            "@type": "@id"
+        },
+        "hours_slept": {
+            "@id": "dbt_behavior_bank:hours_slept",
+            "@type": "@id"
+        },
+        "shower_duration": {
+            "@id": "dbt_behavior_bank:shower_duration",
+            "@type": "@id"
+        },
+        "self_validation": {
+            "@id": "dbt_behavior_bank:self_validation",
+            "@type": "@id"
+        },
+        "emotion_mind_decisions_number": {
+            "@id": "dbt_behavior_bank:emotion_mind_decisions_number",
+            "@type": "@id"
+        },
+        "screen_time": {
+            "@id": "dbt_behavior_bank:screen_time",
+            "@type": "@id"
+        },
+        "meals_number": {
+            "@id": "dbt_behavior_bank:meals_number",
+            "@type": "@id"
+        },
+        "skin_picking_number": {
+            "@id": "dbt_behavior_bank:skin_picking_number",
+            "@type": "@id"
+        },
+        "suicide_urges": {
+            "@id": "dbt_behavior_bank:suicide_urges",
+            "@type": "@id"
+        },
+        "suicide_act": {
+            "@id": "dbt_behavior_bank:suicide_act",
+            "@type": "@id"
+        },
+        "self_harm_urges": {
+            "@id": "dbt_behavior_bank:self_harm_urges",
+            "@type": "@id"
+        },
+        "self_harm_act": {
+            "@id": "dbt_behavior_bank:self_harm_act",
+            "@type": "@id"
+        },
+        "impulsive_urges": {
+            "@id": "dbt_behavior_bank:impulsive_urges",
+            "@type": "@id"
+        },
+        "impulsive_urges_act": {
+            "@id": "dbt_behavior_bank:impulsive_urges_act",
+            "@type": "@id"
+        },
+        "picking_scratching_urges": {
+            "@id": "dbt_behavior_bank:picking_scratching_urges",
+            "@type": "@id"
+        },
+        "picking_scratching_act": {
+            "@id": "dbt_behavior_bank:picking_scratching_act",
+            "@type": "@id"
+        },
+        "planning_suicide_urges": {
+            "@id": "dbt_behavior_bank:planning_suicide_urges",
+            "@type": "@id"
+        },
+        "planning_suicide_act": {
+            "@id": "dbt_behavior_bank:planning_suicide_act",
+            "@type": "@id"
+        },
+        "purging_urges": {
+            "@id": "dbt_behavior_bank:purging_urges",
+            "@type": "@id"
+        },
+        "purging_act": {
+            "@id": "dbt_behavior_bank:purging_act",
+            "@type": "@id"
+        },
+        "restricting_urges": {
+            "@id": "dbt_behavior_bank:restricting_urges",
+            "@type": "@id"
+        },
+        "restricting_act": {
+            "@id": "dbt_behavior_bank:restricting_act",
+            "@type": "@id"
+        },
+        "binging_urges": {
+            "@id": "dbt_behavior_bank:binging_urges",
+            "@type": "@id"
+        },
+        "binging_act": {
+            "@id": "dbt_behavior_bank:binging_act",
+            "@type": "@id"
+        },
+        "lying_urges": {
+            "@id": "dbt_behavior_bank:lying_urges",
+            "@type": "@id"
+        },
+        "lying_act": {
+            "@id": "dbt_behavior_bank:lying_act",
+            "@type": "@id"
+        },
+        "lie_omission_urges": {
+            "@id": "dbt_behavior_bank:lie_omission_urges",
+            "@type": "@id"
+        },
+        "lie_omission_act": {
+            "@id": "dbt_behavior_bank:lie_omission_act",
+            "@type": "@id"
+        },
+        "skip_class_urges": {
+            "@id": "dbt_behavior_bank:skip_class_urges",
+            "@type": "@id"
+        },
+        "skip_class_act": {
+            "@id": "dbt_behavior_bank:skip_class_act",
+            "@type": "@id"
+        },
+        "drugs_urges": {
+            "@id": "dbt_behavior_bank:drugs_urges",
+            "@type": "@id"
+        },
+        "drugs_act": {
+            "@id": "dbt_behavior_bank:drugs_act",
+            "@type": "@id"
+        },
+        "alcohol_urges": {
+            "@id": "dbt_behavior_bank:alcohol_urges",
+            "@type": "@id"
+        },
+        "alcohol_act": {
+            "@id": "dbt_behavior_bank:alcohol_act",
+            "@type": "@id"
+        },
+        "self_harm_thoughts_urges": {
+            "@id": "dbt_behavior_bank:self_harm_thoughts_urges",
+            "@type": "@id"
+        },
+        "self_harm_thoughts_act": {
+            "@id": "dbt_behavior_bank:self_harm_thoughts_act",
+            "@type": "@id"
+        },
+        "smoking_urges": {
+            "@id": "dbt_behavior_bank:smoking_urges",
+            "@type": "@id"
+        },
+        "smoking_act": {
+            "@id": "dbt_behavior_bank:smoking_act",
+            "@type": "@id"
+        },
+        "verbally_agressive_urges": {
+            "@id": "dbt_behavior_bank:verbally_agressive_urges",
+            "@type": "@id"
+        },
+        "verbally_agressive_act": {
+            "@id": "dbt_behavior_bank:verbally_agressive_act",
+            "@type": "@id"
+        },
+        "physically_aggressive_urges": {
+            "@id": "dbt_behavior_bank:physically_aggressive_urges",
+            "@type": "@id"
+        },
+        "physically_aggressive_act": {
+            "@id": "dbt_behavior_bank:physically_aggressive_act",
+            "@type": "@id"
+        },
+        "stealing_urges": {
+            "@id": "dbt_behavior_bank:stealing_urges",
+            "@type": "@id"
+        },
+        "stealing_act": {
+            "@id": "dbt_behavior_bank:stealing_act",
+            "@type": "@id"
+        },
+        "avoidance_urges": {
+            "@id": "dbt_behavior_bank:avoidance_urges",
+            "@type": "@id"
+        },
+        "avoidance_act": {
+            "@id": "dbt_behavior_bank:avoidance_act",
+            "@type": "@id"
+        },
+        "withdrawing_urges": {
+            "@id": "dbt_behavior_bank:withdrawing_urges",
+            "@type": "@id"
+        },
+        "withdrawing_act": {
+            "@id": "dbt_behavior_bank:withdrawing_act",
+            "@type": "@id"
+        },
+        "ineffectively_seek_help_urges": {
+            "@id": "dbt_behavior_bank:ineffectively_seek_help_urges",
+            "@type": "@id"
+        },
+        "ineffectively_seek_help_act": {
+            "@id": "dbt_behavior_bank:ineffectively_seek_help_act",
+            "@type": "@id"
+        },
+        "skipping_meals_urge": {
+            "@id": "dbt_behavior_bank:skipping_meals_urge",
+            "@type": "@id"
+        },
+        "skipping_meals_act": {
+            "@id": "dbt_behavior_bank:skipping_meals_act",
+            "@type": "@id"
+        },
+        "calorie_counting_urge": {
+            "@id": "dbt_behavior_bank:calorie_counting_urge",
+            "@type": "@id"
+        },
+        "calorie_counting_act": {
+            "@id": "dbt_behavior_bank:calorie_counting_act",
+            "@type": "@id"
+        },
+        "risky_sexual_behaviors_urges": {
+            "@id": "dbt_behavior_bank:risky_sexual_behaviors_urges",
+            "@type": "@id"
+        },
+        "risky_sexual_behaviors_act": {
+            "@id": "dbt_behavior_bank:risky_sexual_behaviors_act",
+            "@type": "@id"
+        },
+        "avoidance_feelings_urges": {
+            "@id": "dbt_behavior_bank:avoidance_feelings_urges",
+            "@type": "@id"
+        },
+        "avoidance_feelings_act": {
+            "@id": "dbt_behavior_bank:avoidance_feelings_act",
+            "@type": "@id"
+        },
+        "avoidance_behaviors_urges": {
+            "@id": "dbt_behavior_bank:avoidance_behaviors_urges",
+            "@type": "@id"
+        },
+        "avoidance_behaviors_act": {
+            "@id": "dbt_behavior_bank:avoidance_behaviors_act",
+            "@type": "@id"
+        }
+    }
+}

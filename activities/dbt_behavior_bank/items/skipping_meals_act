@@ -3,7 +3,7 @@
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
     ],
     "@type": "reproschema:Field",
-    "@id": "self-harm_act",
+    "@id": "skipping_meals_act",
     "ui": {
         "inputType": "radio",
         "allow": [

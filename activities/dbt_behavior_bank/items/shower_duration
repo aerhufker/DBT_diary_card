@@ -1,0 +1,11 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "shower_duration",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": "\r\n\r\n![showerDuration.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/showerDuration.png =250x250)\r\n\r\nHow much time did you spend in the **shower**?"
+}

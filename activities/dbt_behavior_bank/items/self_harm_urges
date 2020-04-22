@@ -3,11 +3,11 @@
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
     ],
     "@type": "reproschema:Field",
-    "@id": "planning_suicide",
+    "@id": "self_harm_urges",
     "ui": {
         "inputType": "slider"
     },
-    "question": "\r\n\r\n![behaviorUrges.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/behaviorUrges.png =250x250)\r\n\r\nHow intense were your urges for **planning for suicide** today?",
+    "question": "\r\n\r\n![behaviorUrges.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/behaviorUrges.png =250x250)\r\n\r\nHow intense were your urges for **self-harm** today?",
     "responseOptions": {
         "choices": [
             {

@@ -1,0 +1,11 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "wake_time",
+    "ui": {
+        "inputType": "time"
+    },
+    "question": "\r\n\r\n![wakeTime.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/wakeTime.png =250x250)\r\n\r\nWhat time did you **wake up**?"
+}

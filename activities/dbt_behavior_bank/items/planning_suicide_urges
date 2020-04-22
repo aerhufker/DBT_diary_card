@@ -1,0 +1,45 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "planning_suicide_urges",
+    "ui": {
+        "inputType": "slider"
+    },
+    "question": "\r\n\r\n![behaviorUrges.png](https://raw.githubusercontent.com/hotavocado/DBT_diary_card/master/images/png/behaviorUrges.png =250x250)\r\n\r\nHow intense were your urges for **planning for suicide** today?",
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": "0",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 1,
+                "schema:name": "1",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2,
+                "schema:name": "2",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 3,
+                "schema:name": "3",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 4,
+                "schema:name": "4",
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 5,
+                "schema:name": "5",
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

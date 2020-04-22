@@ -9,6 +9,10 @@
         "dbt_daily_goals": {
             "@id": "activity_path:dbt_daily_goals/dbt_daily_goals_schema",
             "@type": "@id"
+        },
+        "dbt_behavior_bank": {
+            "@id": "activity_path:dbt_behavior_bank/dbt_behavior_bank_schema",
+            "@type": "@id"
         }
     }
 }
