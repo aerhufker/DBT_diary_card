@@ -7,22 +7,26 @@ const protocolName = "DBT_diary_card"
 const protocolDisplayName = "DBT Daily Diary Card v1.06"
 
 //2. create your raw github repo URL
-const input = require('readline-sync');
-let StQ = input.question("Do you want a custom URL respond y/n? ");
+// const input = require('readline-sync');
+// let StQ = input.question("Do you want a custom URL respond y/n? ");
 
-if(StQ== "n" ||StQ == "no"||StQ== "N" ||StQ == "No") {
-    const userName = 'userName'
-    const repoName = 'DBT_diary_card'
-    const branchName = 'master'
-} else if(StQ== "y"||StQ == "yes"||StQ== "Y"||StQ == "Yes") {
-    const userName = input.question('Please enter username ');
-    const repoName = input.question('Please enter repo name ');
-    const branchName = input.question('Please enter branch name ');
-} else {
-    const userName = 'userName'
-    const repoName = 'DBT_diary_card'
-    const branchName = 'master'
-}
+// if(StQ== "n" ||StQ == "no"||StQ== "N" ||StQ == "No") {
+//     const userName = 'userName'
+const userName = 'ahufker'
+const repoName = 'DBT_diary_card'
+const branchName = 'master'
+//     const userName = 'ahufker'
+//     const repoName = 'DBT_diary_card'
+//     const branchName = 'master'
+// } else if(StQ== "y"||StQ == "yes"||StQ== "Y"||StQ == "Yes") {
+//     const userName = input.question('Please enter username ');
+//     const repoName = input.question('Please enter repo name ');
+//     const branchName = input.question('Please enter branch name ');
+// } else {
+//     const userName = 'userName'
+//     const repoName = 'DBT_diary_card'
+//     const branchName = 'master'
+// }
 //3. add a description to your protocol
 let protocolDescription = "Record your daily progress with Dialectical Behavorial Therapy"
 
